@@ -9,13 +9,6 @@ module.exports = {
 
   parser: 'babel-eslint',
 
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-      modules: true,
-    },
-  },
-
   settings: {
     'import/resolver': {
       node: {
@@ -37,10 +30,6 @@ module.exports = {
 
   // Overrides ruls
   rules: {
-    // Specify whether double or single quotes should be used in JSX attributes
-    // https://eslint.org/docs/rules/jsx-quotes
-    'jsx-quote': ['error', 'prefer-single'],
-
     // Limit maximum of props on a single line in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
     'react/jsx-max-props-per-line': [
