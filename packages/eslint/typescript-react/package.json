@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-typescript-react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ntnyq eslint config for TypeScript and React.js",
   "keywords": [
     "eslint-config",
@@ -24,8 +24,8 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config-react": "0.0.0",
-    "@ntnyq/eslint-config-typescript": "0.0.0"
+    "@ntnyq/eslint-config-react": "0.1.0",
+    "@ntnyq/eslint-config-typescript": "0.1.0"
   },
   "publishConfig": {
     "access": "public"

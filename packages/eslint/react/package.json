@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ntnyq eslint config for React.js",
   "keywords": [
     "eslint-config",

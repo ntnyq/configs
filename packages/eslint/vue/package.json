@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-vue",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ntnyq eslint config for Vue.js",
   "keywords": [
     "eslint-config",
