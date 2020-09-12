@@ -99,17 +99,8 @@ module.exports = {
 
     // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': [
-      'error',
-      {
-        functions: true,
-        classes: true,
-        variables: true,
-        nums: true,
-        typedefs: true,
-        ignoreTypeReferences: true,
-      },
-    ],
+    // FIXME: config it properly
+    '@typescript-eslint/no-use-before-define': ['off'],
 
     // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
     quotes: 'off',
