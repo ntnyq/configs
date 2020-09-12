@@ -105,6 +105,9 @@ module.exports = {
         functions: true,
         classes: true,
         variables: true,
+        nums: true,
+        typedefs: true,
+        ignoreTypeReferences: true,
       },
     ],
 

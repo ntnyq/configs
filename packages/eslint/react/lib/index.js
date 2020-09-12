@@ -47,16 +47,9 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
     'react/no-danger': 'warn',
 
-    // Prevent missing props validation in a React component definition
+    // Disable props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-    'react/prop-types': [
-      'error',
-      {
-        ignore: [],
-        customValidators: [],
-        skipUndeclared: false,
-      },
-    ],
+    'react/prop-types': ['off'],
 
     // Prevent missing parentheses around multilines JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-wrap-multilines.md
