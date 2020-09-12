@@ -1,7 +1,7 @@
 /**
  * Prettier Config
  *
- * @see https://prettier.io/docs/en/configuration.html
+ * @see https://prettier.io/docs/en/options.html
  */
 
 module.exports = {
@@ -65,4 +65,7 @@ module.exports = {
 
   // End of line
   endOfLine: 'lf',
+
+  // Control whether Prettier formats quoted code embedded in the file
+  embeddedLanguageFormatting: 'auto',
 }
