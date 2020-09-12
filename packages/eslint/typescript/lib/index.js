@@ -38,6 +38,87 @@ module.exports = {
       },
     ],
 
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
+    'comma-spacing': 'off',
+    '@typescript-eslint/comma-spacing': [
+      'error',
+      {
+        before: false,
+        after: true,
+      },
+    ],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/keyword-spacing.md
+    'keyword-spacing': 'off',
+    '@typescript-eslint/keyword-spacing': [
+      'error',
+      {
+        before: true,
+        after: true,
+        overrides: {
+          return: { after: true },
+          throw: { after: true },
+          case: { after: true },
+        },
+      },
+    ],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
+    'lines-between-class-members': 'off',
+    '@typescript-eslint/lines-between-class-members': [
+      'error',
+      'always',
+      {
+        exceptAfterSingleLine: false,
+      },
+    ],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
+    'no-empty-function': 'off',
+    '@typescript-eslint/no-empty-function': ['error'],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
+    'no-extra-parens': 'off',
+    '@typescript-eslint/no-extra-parens': ['error', 'functions'],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
+    'no-extra-semi': 'off',
+    '@typescript-eslint/no-extra-semi': ['error'],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'after-used',
+        ignoreRestSiblings: true,
+      },
+    ],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: true,
+        classes: true,
+        variables: true,
+      },
+    ],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
+    quotes: 'off',
+    '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
+    semi: 'off',
+    '@typescript-eslint/semi': ['error', 'never'],
+
+    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-before-function-paren.md
+    'space-before-function-paren': 'off',
+    '@typescript-eslint/space-before-function-paren': ['error', 'always'],
+
     // Default export should not be encouraged in typescript
     'import/prefer-default-export': 'off',
 
