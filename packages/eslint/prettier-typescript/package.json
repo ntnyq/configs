@@ -1,0 +1,33 @@
+{
+  "name": "@ntnyq/eslint-config-prettier-typescript",
+  "version": "0.0.0",
+  "description": "ntnyq eslint config for TypeScript with prettier",
+  "keywords": [
+    "eslint-config",
+    "prettier",
+    "typescript",
+    "ntnyq"
+  ],
+  "homepage": "https://github.com/ntnyq/configs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntnyq/configs.git",
+    "directory": "packages/eslint/prettier-typescript"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@ntnyq/eslint-config-prettier": "0.0.0",
+    "@ntnyq/eslint-config-typescript": "0.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

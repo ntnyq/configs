@@ -1,0 +1,33 @@
+{
+  "name": "@ntnyq/eslint-config-typescript",
+  "version": "0.0.0",
+  "description": "ntnyq eslint config for TypeScript",
+  "keywords": [
+    "eslint-config",
+    "typescript",
+    "ntnyq"
+  ],
+  "homepage": "https://github.com/ntnyq/configs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntnyq/configs.git",
+    "directory": "packages/eslint/typescript"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@ntnyq/eslint-config": "0.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

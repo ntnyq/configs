@@ -1,0 +1,33 @@
+{
+  "name": "@ntnyq/eslint-config-prettier-react",
+  "version": "0.0.0",
+  "description": "ntnyq eslint config for React.js with prettier",
+  "keywords": [
+    "eslint-config",
+    "prettier",
+    "react",
+    "ntnyq"
+  ],
+  "homepage": "https://github.com/ntnyq/configs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntnyq/configs.git",
+    "directory": "packages/eslint/prettier-react"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@ntnyq/eslint-config-prettier": "0.0.0",
+    "@ntnyq/eslint-config-react": "0.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
