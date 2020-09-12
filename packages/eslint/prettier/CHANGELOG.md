@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier@0.1.0...@ntnyq/eslint-config-prettier@0.1.1) (2020-09-12)
+
+### Bug Fixes
+
+- invalid file name ([83a0c9c](https://github.com/ntnyq/configs/commit/83a0c9c119b2fb36a538948b2ba524caafe6fd9e))
+
 # 0.1.0 (2020-09-12)
 
 ### Features

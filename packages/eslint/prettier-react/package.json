@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-prettier-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ntnyq eslint config for React.js with prettier",
   "keywords": [
     "eslint-config",
@@ -24,7 +24,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config-prettier": "0.1.0",
+    "@ntnyq/eslint-config-prettier": "0.1.1",
     "@ntnyq/eslint-config-react": "0.1.0"
   },
   "publishConfig": {
