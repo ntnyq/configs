@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-typescript-vue",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "ntnyq eslint config for TypeScript and Vue.js",
   "keywords": [
     "eslint-config",
@@ -24,7 +24,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config-typescript": "0.1.4",
+    "@ntnyq/eslint-config-typescript": "0.1.5",
     "@ntnyq/eslint-config-vue": "0.1.0"
   },
   "publishConfig": {
