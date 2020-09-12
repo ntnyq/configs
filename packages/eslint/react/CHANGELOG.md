@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.1.1...@ntnyq/eslint-config-react@0.1.2) (2020-09-12)
+
+### Bug Fixes
+
+- ecmaFeatures deprecated warning ([a9ebce5](https://github.com/ntnyq/configs/commit/a9ebce5f3c3142a8b137e33405ba35a95b186d0a))
+
 ## [0.1.1](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.1.0...@ntnyq/eslint-config-react@0.1.1) (2020-09-12)
 
 ### Bug Fixes
