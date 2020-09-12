@@ -3,11 +3,17 @@
  */
 
 module.exports = {
-  extends: ['@ntnyq', 'react'],
+  extends: [
+    '@ntnyq',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
+  ],
 
-  plugins: ['jsx-a11y'],
-
-  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
 
   settings: {
     'import/resolver': {
