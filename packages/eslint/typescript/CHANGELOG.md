@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-typescript@0.1.1...@ntnyq/eslint-config-typescript@0.1.2) (2020-09-12)
+
+### Bug Fixes
+
+- rule: no-use-before-define ([611bb41](https://github.com/ntnyq/configs/commit/611bb4135e2237318498fbae047beb0719c57f6c))
+
 ## [0.1.1](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-typescript@0.1.0...@ntnyq/eslint-config-typescript@0.1.1) (2020-09-12)
 
 ### Bug Fixes

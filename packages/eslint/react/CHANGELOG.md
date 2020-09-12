@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.1.0...@ntnyq/eslint-config-react@0.1.1) (2020-09-12)
+
+### Bug Fixes
+
+- override rules for react ([37ad5b6](https://github.com/ntnyq/configs/commit/37ad5b6f8b82d5012cfbc78bdc90fc99d4a76c38))
+
 # 0.1.0 (2020-09-12)
 
 ### Features
