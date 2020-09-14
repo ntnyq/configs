@@ -1,3 +1,3 @@
 # Configs
 
-EsLint config & other configs
+EsLint config & StyleLint config & other configs

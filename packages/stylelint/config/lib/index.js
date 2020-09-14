@@ -7,17 +7,23 @@
 module.exports = {
   extends: ['stylelint-config-standard'],
 
+  // Globs to ignore specific files
+  ignoreFiles: ['node_modules', '*.min.css', '*.min.scss'],
+
   // Overrides rules
   rules: {
     // Require or disallow an empty line before at-rules
     'at-rule-empty-line-before': [
       'always',
       {
-        except: ['inside-block'],
-        ignore: ['first-nested'],
-        ignoreAtRules: ['import'],
+        except: ['inside-block', 'blockless-after-same-name-blockless'],
+        ignore: ['first-nested', 'after-comment'],
+        ignoreAtRules: ['import', 'else'],
       },
     ],
+
+    // Specify double quotes around strings
+    'string-quotes': 'double',
 
     // Require a leading zero for fractional numbers less than 1
     'number-leading-zero': 'always',
@@ -47,6 +53,15 @@ module.exports = {
 
     // Specify single or double colon notation for applicable pseudo-elements
     'selector-pseudo-element-colon-notation': 'single',
+
+    // Require quotes for attribute values
+    'selector-attribute-quotes': 'always',
+
+    // Specify a pattern for class selectors
+    'selector-class-pattern': '^([a-z][a-z0-9]*)(_[a-z0-9]+)*$',
+
+    // Specify a pattern for id selectors
+    'selector-id-pattern': '^([a-z][a-z0-9]*)(_[a-z0-9]+)*$',
 
     // Disallow unknown pseudo-element selectors
     'selector-pseudo-element-no-unknown': [
