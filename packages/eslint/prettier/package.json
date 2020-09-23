@@ -26,7 +26,7 @@
     "@ntnyq/eslint-config": "0.0.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.2"
   },
   "publishConfig": {
     "access": "public"

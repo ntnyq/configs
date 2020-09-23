@@ -40,9 +40,9 @@
     "eslint-config-goy": "^0.2.3",
     "husky": "^4.3.0",
     "lerna": "^3.22.1",
-    "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
     "prettier-config-goy": "^1.1.0",
-    "sort-package-json": "^1.44.0"
+    "sort-package-json": "^1.46.0"
   }
 }
