@@ -3,27 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.1.4](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.1.3...@ntnyq/eslint-config-react@0.1.4) (2020-09-12)
+## [0.1.5](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.1.4...@ntnyq/eslint-config-react@0.1.5) (2020-09-23)
 
+**Note:** Version bump only for package @ntnyq/eslint-config-react
+
+## [0.1.4](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.1.3...@ntnyq/eslint-config-react@0.1.4) (2020-09-12)
 
 ### Bug Fixes
 
-* react and typescript ([4e411ef](https://github.com/ntnyq/configs/commit/4e411efc81523b47edb95bbf088d271b6eee011f))
-
-
-
-
+- react and typescript ([4e411ef](https://github.com/ntnyq/configs/commit/4e411efc81523b47edb95bbf088d271b6eee011f))
 
 ## [0.1.3](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.1.2...@ntnyq/eslint-config-react@0.1.3) (2020-09-12)
 
-
 ### Bug Fixes
 
-* typescript and react ([d18eb1a](https://github.com/ntnyq/configs/commit/d18eb1a67ab0595372004a00a2acd6dca5c5466e))
-
-
-
-
+- typescript and react ([d18eb1a](https://github.com/ntnyq/configs/commit/d18eb1a67ab0595372004a00a2acd6dca5c5466e))
 
 ## [0.1.2](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.1.1...@ntnyq/eslint-config-react@0.1.2) (2020-09-12)
 

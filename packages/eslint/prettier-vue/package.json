@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-prettier-vue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ntnyq eslint config for Vue.js with prettier",
   "keywords": [
     "eslint-config",
@@ -24,7 +24,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config-prettier": "0.1.1",
+    "@ntnyq/eslint-config-prettier": "0.1.2",
     "@ntnyq/eslint-config-vue": "0.1.0"
   },
   "publishConfig": {

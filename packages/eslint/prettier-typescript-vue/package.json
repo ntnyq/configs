@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-prettier-typescript-vue",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "ntnyq eslint config for TypeScript and Vue.js with Prettier",
   "keywords": [
     "eslint-config",
@@ -25,8 +25,8 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config-prettier": "0.1.1",
-    "@ntnyq/eslint-config-typescript-vue": "0.1.5"
+    "@ntnyq/eslint-config-prettier": "0.1.2",
+    "@ntnyq/eslint-config-typescript-vue": "0.1.6"
   },
   "publishConfig": {
     "access": "public"
