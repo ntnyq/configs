@@ -7,18 +7,25 @@
 module.exports = {
   extends: [
     '@ntnyq',
-    //
+    // Vue style guide
     'plugin:vue/recommended',
   ],
 
   plugins: ['vue'],
 
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: require.resolve('babel-eslint'),
   },
 
   // Rules overrides
   rules: {
+    /**
+     * Disallow use of v-html to prevent XSS attack
+     *
+     * @see https://eslint.vuejs.org/rules/no-v-html.html
+     */
+    'vue/no-v-html': 'off',
+
     // Put multiple attrs in multiple lines
     'vue/max-attributes-per-line': [
       'error',
