@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier@0.1.3...@ntnyq/eslint-config-prettier@0.2.0) (2020-11-07)
+
+### Features
+
+- extract babel-eslint ([a1f7446](https://github.com/ntnyq/configs/commit/a1f744685ff7038a72a94a0efe69b28eb27d0a7e))
+
 ## [0.1.3](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier@0.1.2...@ntnyq/eslint-config-prettier@0.1.3) (2020-10-10)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-prettier

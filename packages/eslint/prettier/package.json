@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-prettier",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "ntnyq eslint config with prettier",
   "keywords": [
     "eslint-config",
@@ -23,7 +23,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config": "0.0.2",
+    "@ntnyq/eslint-config": "0.1.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.1.2"

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-typescript@0.1.7...@ntnyq/eslint-config-typescript@0.2.0) (2020-11-07)
+
+### Features
+
+- extract babel-eslint ([a1f7446](https://github.com/ntnyq/configs/commit/a1f744685ff7038a72a94a0efe69b28eb27d0a7e))
+
 ## [0.1.7](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-typescript@0.1.6...@ntnyq/eslint-config-typescript@0.1.7) (2020-10-10)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-typescript
