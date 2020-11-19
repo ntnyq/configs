@@ -68,4 +68,25 @@ module.exports = {
 
   // Control whether Prettier formats quoted code embedded in the file
   embeddedLanguageFormatting: 'auto',
+
+  // Overrides for specific language
+  overrides: [
+    {
+      files: '*.scss',
+
+      options: {
+        // Double quotes for CSS and its processor
+        singleQuote: false,
+      },
+    },
+
+    {
+      files: '*.md',
+
+      options: {
+        // Much indent
+        tabWidth: 4,
+      },
+    },
+  ],
 }
