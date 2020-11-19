@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.10](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier-typescript-vue@0.1.9...@ntnyq/eslint-config-prettier-typescript-vue@0.1.10) (2020-11-19)
+
+**Note:** Version bump only for package @ntnyq/eslint-config-prettier-typescript-vue
+
 ## [0.1.9](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier-typescript-vue@0.1.8...@ntnyq/eslint-config-prettier-typescript-vue@0.1.9) (2020-11-07)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-prettier-typescript-vue

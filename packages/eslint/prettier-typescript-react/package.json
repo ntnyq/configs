@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-prettier-typescript-react",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "ntnyq eslint config for TypeScript and React.js with Prettier",
   "keywords": [
     "eslint-config",
@@ -25,8 +25,8 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config-prettier": "0.2.0",
-    "@ntnyq/eslint-config-typescript-react": "0.1.9"
+    "@ntnyq/eslint-config-prettier": "0.2.1",
+    "@ntnyq/eslint-config-typescript-react": "0.1.10"
   },
   "publishConfig": {
     "access": "public"
