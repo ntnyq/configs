@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config@0.2.0...@ntnyq/eslint-config@0.3.0) (2020-12-10)
+
+### Features
+
+- deprecate eslint-plugin-standard ([66f0e1a](https://github.com/ntnyq/configs/commit/66f0e1a2ca5060a631477a69d6706a6a8fda2708))
+
 # [0.2.0](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config@0.1.0...@ntnyq/eslint-config@0.2.0) (2020-11-19)
 
 ### Features
