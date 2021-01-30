@@ -27,7 +27,7 @@ module.exports = {
   jsxSingleQuote: true,
 
   // Print trailing commas wherever possible when multi-line
-  trailingComma: 'es5',
+  trailingComma: 'all',
 
   // Print spaces between brackets in object literals.
   bracketSpacing: true,
@@ -72,7 +72,7 @@ module.exports = {
   // Overrides for specific language
   overrides: [
     {
-      files: '*.scss',
+      files: '*.{css,scss,less}',
 
       options: {
         // Double quotes for CSS and its processor
@@ -84,7 +84,7 @@ module.exports = {
       files: '*.md',
 
       options: {
-        // Much indent
+        // Enlarge the indent
         tabWidth: 4,
       },
     },
