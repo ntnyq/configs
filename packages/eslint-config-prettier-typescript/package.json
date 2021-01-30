@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-prettier-typescript",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "ntnyq eslint config for TypeScript with prettier",
   "keywords": [
     "eslint-config",
@@ -24,8 +24,8 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config-prettier": "0.3.0",
-    "@ntnyq/eslint-config-typescript": "0.4.0"
+    "@ntnyq/eslint-config-prettier": "0.3.1",
+    "@ntnyq/eslint-config-typescript": "0.4.1"
   },
   "publishConfig": {
     "access": "public"

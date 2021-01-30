@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.11](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier-react@0.1.10...@ntnyq/eslint-config-prettier-react@0.1.11) (2021-01-30)
+
+**Note:** Version bump only for package @ntnyq/eslint-config-prettier-react
+
 ## [0.1.10](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier-react@0.1.9...@ntnyq/eslint-config-prettier-react@0.1.10) (2020-12-10)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-prettier-react
