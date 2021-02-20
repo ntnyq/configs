@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "ntnyq eslint config",
   "keywords": [
     "eslint-config",
@@ -29,6 +29,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "devDependencies": {}
+  }
 }

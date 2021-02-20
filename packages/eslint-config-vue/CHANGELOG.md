@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-vue@0.3.1...@ntnyq/eslint-config-vue@0.4.0) (2021-02-20)
+
+### Features
+
+-   migrate to @babel/eslint-parser ([2e65d64](https://github.com/ntnyq/configs/commit/2e65d647cfa2f762c3bebd8dedb8ff68134c1235))
+
 ## [0.3.1](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-vue@0.3.0...@ntnyq/eslint-config-vue@0.3.1) (2021-01-30)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-vue
