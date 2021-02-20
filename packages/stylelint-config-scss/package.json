@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "@ntnyq/stylelint-config": "0.1.2",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-scss": "^3.19.0"
   },
   "publishConfig": {
     "access": "public"
