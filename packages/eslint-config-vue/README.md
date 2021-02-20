@@ -5,9 +5,9 @@
 ### Install
 
 ```bash
-$ npm i @ntnyq/eslint-config-vue babel-eslint -D
+$ npm i @ntnyq/eslint-config-vue -D
 # OR
-$ yarn add @ntnyq/eslint-config-vue babel-eslint -D
+$ yarn add @ntnyq/eslint-config-vue -D
 ```
 
 ### Extend this config
