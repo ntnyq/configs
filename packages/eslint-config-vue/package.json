@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-vue",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "ntnyq eslint config for Vue.js",
   "keywords": [
     "eslint-config",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.8",
-    "@ntnyq/eslint-config": "0.3.2",
+    "@ntnyq/eslint-config": "0.3.3",
     "eslint-plugin-vue": "^7.19.1"
   },
   "publishConfig": {

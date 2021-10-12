@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/ntnyq/configs/compare/@ntnyq/prettier-config@0.3.0...@ntnyq/prettier-config@0.3.1) (2021-10-12)
+
+### Bug Fixes
+
+-   prettier config ([826f849](https://github.com/ntnyq/configs/commit/826f849b66167bf7b3919eb18952943935230174))
+
 # [0.3.0](https://github.com/ntnyq/configs/compare/@ntnyq/prettier-config@0.2.1...@ntnyq/prettier-config@0.3.0) (2021-01-30)
 
 ### Features

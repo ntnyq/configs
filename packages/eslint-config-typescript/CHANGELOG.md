@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-typescript@0.4.2...@ntnyq/eslint-config-typescript@0.4.3) (2021-10-12)
+
+**Note:** Version bump only for package @ntnyq/eslint-config-typescript
+
 ## [0.4.2](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-typescript@0.4.1...@ntnyq/eslint-config-typescript@0.4.2) (2021-02-20)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-typescript

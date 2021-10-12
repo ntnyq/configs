@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-typescript",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "ntnyq eslint config for TypeScript",
   "keywords": [
     "eslint-config",
@@ -23,7 +23,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config": "0.3.2",
+    "@ntnyq/eslint-config": "0.3.3",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0"
   },

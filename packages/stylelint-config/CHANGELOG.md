@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/ntnyq/configs/compare/@ntnyq/stylelint-config@0.1.2...@ntnyq/stylelint-config@0.1.3) (2021-10-12)
+
+**Note:** Version bump only for package @ntnyq/stylelint-config
+
 ## [0.1.2](https://github.com/ntnyq/configs/compare/@ntnyq/stylelint-config@0.1.1...@ntnyq/stylelint-config@0.1.2) (2021-01-30)
 
 **Note:** Version bump only for package @ntnyq/stylelint-config

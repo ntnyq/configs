@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.9](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier-vue@0.1.8...@ntnyq/eslint-config-prettier-vue@0.1.9) (2021-10-12)
+
+### Bug Fixes
+
+-   prettier config ([826f849](https://github.com/ntnyq/configs/commit/826f849b66167bf7b3919eb18952943935230174))
+
 ## [0.1.8](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier-vue@0.1.7...@ntnyq/eslint-config-prettier-vue@0.1.8) (2021-02-20)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-prettier-vue
