@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     // Disable code style rules of `EsLint`, which should be handled by `Prettier`
     'prettier',
+    'prettier/prettier',
   ],
 
   plugins: [

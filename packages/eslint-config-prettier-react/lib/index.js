@@ -7,6 +7,5 @@ module.exports = {
     '@ntnyq/react',
     // Extends preset about prettier
     '@ntnyq/prettier/lib/prettier',
-    'prettier/react',
   ],
 }

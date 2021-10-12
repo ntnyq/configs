@@ -7,6 +7,5 @@ module.exports = {
     '@ntnyq/vue',
     // Extends preset about prettier
     '@ntnyq/prettier/lib/prettier',
-    'prettier/vue',
   ],
 }
