@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.14](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-typescript-vue@0.1.13...@ntnyq/eslint-config-typescript-vue@0.1.14) (2022-02-11)
+
+**Note:** Version bump only for package @ntnyq/eslint-config-typescript-vue
+
+
+
+
+
 ## [0.1.13](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-typescript-vue@0.1.12...@ntnyq/eslint-config-typescript-vue@0.1.13) (2021-10-12)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-typescript-vue

@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/stylelint-config-vue",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ntnyq's stylelint config for vue SFC",
   "keywords": [
     "stylelint-config",

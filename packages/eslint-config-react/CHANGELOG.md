@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.2.5...@ntnyq/eslint-config-react@0.3.0) (2022-02-11)
+
+
+### Features
+
+* new step ([68876c8](https://github.com/ntnyq/configs/commit/68876c82a5b890c2f6f7c0560f8a06f66cff8720))
+
+
+
+
+
 ## [0.2.5](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-react@0.2.4...@ntnyq/eslint-config-react@0.2.5) (2021-10-12)
 
 **Note:** Version bump only for package @ntnyq/eslint-config-react

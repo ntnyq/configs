@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/stylelint-config-prettier",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ntnyq's stylelint config with prettier",
   "keywords": [
     "stylelint-config",

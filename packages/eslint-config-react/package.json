@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/eslint-config-react",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "ntnyq eslint config for React.js",
   "keywords": [
     "eslint-config",
@@ -23,7 +23,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config": "0.3.3",
+    "@ntnyq/eslint-config": "0.4.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0"

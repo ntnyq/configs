@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.15](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier-typescript@0.1.14...@ntnyq/eslint-config-prettier-typescript@0.1.15) (2022-02-11)
+
+**Note:** Version bump only for package @ntnyq/eslint-config-prettier-typescript
+
+
+
+
+
 ## [0.1.14](https://github.com/ntnyq/configs/compare/@ntnyq/eslint-config-prettier-typescript@0.1.13...@ntnyq/eslint-config-prettier-typescript@0.1.14) (2021-10-12)
 
 ### Bug Fixes

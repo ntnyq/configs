@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/stylelint-config-scss",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "ntnyq stylelint config",
   "keywords": [
     "stylelint-config",
@@ -26,7 +26,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/stylelint-config": "0.1.3",
+    "@ntnyq/stylelint-config": "0.2.0",
     "postcss-scss": "^4.0.3",
     "stylelint-scss": "^4.1.0"
   },
