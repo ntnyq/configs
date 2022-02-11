@@ -1,3 +1,22 @@
 {
-  "cSpell.words": ["unspaced"]
+  "[scss]": {
+    "editor.formatOnSave": false
+  },
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "cSpell.words": [
+    "Cyclomatic",
+    "noopener",
+    "noreferrer",
+    "stylelintrc",
+    "uncategorized",
+    "unspaced"
+  ]
 }

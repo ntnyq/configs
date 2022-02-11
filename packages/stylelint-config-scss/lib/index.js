@@ -1,32 +1,34 @@
 /**
- * Standard CSS style for SCSS
- *
- * @see https://github.com/kristerkari/stylelint-scss
+ * @see https://github.com/stylelint-scss/stylelint-config-recommended-scss
  */
 
 module.exports = {
-  extends: ['@ntnyq/stylelint-config'],
+  extends: [`@ntnyq/stylelint-config`],
 
-  plugins: ['stylelint-scss'],
+  customSyntax: `postcss-scss`,
 
-  // Overrides rules
+  plugins: [`stylelint-scss`],
+
   rules: {
-    // =============================== //
-    // Disable rules overrides by SCSS //
-    // =============================== //
+    // Disabled rules in favor of SCSS
     'at-rule-no-unknown': null,
-
-    // Disallow whitespace before the colon in $-variable declarations
-    'dollar-variable-colon-space-before': 'never',
+    'comment-no-empty': null,
 
     // =============================== //
     // SCSS Rules //
     // =============================== //
+
     // Disallow unknown at-rules
     'scss/at-rule-no-unknown': true,
 
+    // Disallow empty comments
+    'scss/comment-no-empty': true,
+
     // Requires a whitespace before the colon in $-variable declarations
     'scss/dollar-variable-colon-space-after': 'always',
+
+    // Disallow whitespace before the colon in $-variable declarations
+    'scss/dollar-variable-colon-space-before': 'never',
 
     // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers
     'scss/dollar-variable-no-missing-interpolation': true,
@@ -42,6 +44,9 @@ module.exports = {
 
     // Disallow unspaced operators in Sass operations
     'scss/operator-no-unspaced': true,
+
+    // Disallow duplicate mixins within a stylesheet.
+    'scss/no-duplicate-mixins': true,
 
     // Disallow redundant nesting selectors (&)
     'scss/selector-no-redundant-nesting-selector': true,

@@ -7,6 +7,9 @@
     "prettier",
     "ntnyq"
   ],
+  "scripts": {
+    "test": "jest"
+  },
   "homepage": "https://github.com/ntnyq/configs#readme",
   "repository": {
     "type": "git",
@@ -26,7 +29,7 @@
     "@ntnyq/eslint-config": "0.3.3",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.5.1"
   },
   "publishConfig": {
     "access": "public"

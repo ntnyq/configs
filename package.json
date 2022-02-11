@@ -5,8 +5,10 @@
     "packages/*"
   ],
   "scripts": {
+    "bootstrap": "yarn || npm i",
     "lint": "eslint packages",
-    "release": "yarn lint && lerna publish"
+    "release": "yarn lint && lerna publish",
+    "test": "lerna run test"
   },
   "commitlint": {
     "extends": [
@@ -21,22 +23,34 @@
   },
   "prettier": "@ntnyq/prettier-config",
   "eslintConfig": {
-    "extends": "@ntnyq/eslint-config",
+    "extends": "@ntnyq/prettier",
+    "overrides": [
+      {
+        "files": "**/__tests__/**/*.spec.js",
+        "env": {
+          "jest": true
+        }
+      }
+    ],
     "root": true
   },
   "dependencies": {
     "@ntnyq/eslint-config": "^0.3.0",
+    "@ntnyq/eslint-config-prettier": "^0.3.3",
     "@ntnyq/prettier-config": "^0.3.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.2.1",
-    "@commitlint/config-conventional": "^13.2.0",
-    "@commitlint/config-lerna-scopes": "^13.2.0",
-    "eslint": "7.32.0",
-    "husky": "^7.0.2",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/config-lerna-scopes": "^16.0.0",
+    "@types/jest": "^27.4.0",
+    "eslint": "8.8.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
     "lerna": "^4.0.0",
-    "lint-staged": "^11.2.3",
-    "prettier": "^2.4.1",
-    "sort-package-json": "^1.52.0"
+    "lint-staged": "^12.3.3",
+    "prettier": "^2.5.1",
+    "sort-package-json": "^1.54.0",
+    "stylelint": "^14.5.0"
   }
 }

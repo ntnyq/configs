@@ -19,3 +19,4 @@ jobs:
       - uses: actions/setup-node@v2
       - run: yarn install --frozen-lockfile --non-interactive
       - run: yarn lint
+      - run: yarn test

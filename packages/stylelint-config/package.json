@@ -6,6 +6,9 @@
     "stylelint-config",
     "ntnyq"
   ],
+  "scripts": {
+    "test": "jest"
+  },
   "homepage": "https://github.com/ntnyq/configs#readme",
   "repository": {
     "type": "git",
@@ -22,7 +25,7 @@
     "lib"
   ],
   "dependencies": {
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint-config-standard": "^25.0.0"
   },
   "publishConfig": {
     "access": "public"
