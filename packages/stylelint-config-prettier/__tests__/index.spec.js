@@ -3,8 +3,7 @@
 const stylelint = require('stylelint')
 const config = require('../lib')
 
-const validCss =
-`div {
+const validCss = `div {
   position: relative;
   box-sizing: border-box;
   flex: 1 1 auto;
@@ -17,8 +16,7 @@ const validCss =
   transition: opacity 300ms ease;
 }
 `
-const invalidCss =
-`div {
+const invalidCss = `div {
   position: relative;
   box-sizing: border-box;
     flex: 1 1 auto;

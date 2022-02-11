@@ -6,7 +6,7 @@
 
 'use strict'
 
-function trbl (prefix) {
+function trbl(prefix) {
   prefix = prefix ? `${prefix}-` : ``
 
   return [
@@ -18,11 +18,11 @@ function trbl (prefix) {
   ]
 }
 
-function minMax (suffix) {
+function minMax(suffix) {
   return [suffix, `min-${suffix}`, `max-${suffix}`]
 }
 
-function border (infix) {
+function border(infix) {
   infix = infix ? `-${infix}` : ''
 
   return [
@@ -54,9 +54,7 @@ const flex = [
 ]
 
 // TODO: add grid rules
-const grid = [
-
-]
+const grid = []
 
 const column = [
   'columns',
@@ -73,10 +71,7 @@ const column = [
 ]
 
 const displayAndBoxModel = []
-  .concat([
-    'display',
-    'float',
-  ])
+  .concat(['display', 'float'])
   .concat(minMax('width'))
   .concat(minMax('height'))
   .concat(trbl('padding'))
@@ -121,9 +116,7 @@ const displayAndBoxModel = []
     'outline-color',
     'outline-offset',
   ])
-  .concat([
-    'box-sizing',
-  ])
+  .concat(['box-sizing'])
 
 const font = [
   'src',
@@ -235,10 +228,7 @@ const visual = [
   'page-break-inside',
 ]
 
-const svg = [
-  'fill',
-  'stroke',
-]
+const svg = ['fill', 'stroke']
 
 const atRules = [
   {
@@ -292,9 +282,7 @@ const atRules = [
 ]
 
 module.exports = {
-  plugins: [
-    'stylelint-order',
-  ],
+  plugins: ['stylelint-order'],
 
   rules: {
     'order/order': [

@@ -3,8 +3,5 @@
  */
 
 module.exports = {
-  extends: [
-    '@ntnyq/typescript',
-    '@ntnyq/prettier/lib/prettier',
-  ],
+  extends: ['@ntnyq/typescript', '@ntnyq/prettier/lib/prettier'],
 }

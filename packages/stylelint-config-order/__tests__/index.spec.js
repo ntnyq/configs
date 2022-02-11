@@ -5,10 +5,22 @@ const path = require('path')
 const stylelint = require('stylelint')
 const config = require('../lib')
 
-const validCss = fs.readFileSync(path.resolve(__dirname, 'fixtures/valid.css'), 'utf-8')
-const validScss = fs.readFileSync(path.resolve(__dirname, 'fixtures/valid.scss'), 'utf-8')
-const invalidCss = fs.readFileSync(path.resolve(__dirname, 'fixtures/invalid.css'), 'utf-8')
-const invalidScss = fs.readFileSync(path.resolve(__dirname, 'fixtures/invalid.scss'), 'utf-8')
+const validCss = fs.readFileSync(
+  path.resolve(__dirname, 'fixtures/valid.css'),
+  'utf-8',
+)
+const validScss = fs.readFileSync(
+  path.resolve(__dirname, 'fixtures/valid.scss'),
+  'utf-8',
+)
+const invalidCss = fs.readFileSync(
+  path.resolve(__dirname, 'fixtures/invalid.css'),
+  'utf-8',
+)
+const invalidScss = fs.readFileSync(
+  path.resolve(__dirname, 'fixtures/invalid.scss'),
+  'utf-8',
+)
 
 describe(`Valid css`, () => {
   let result
