@@ -1,37 +1,26 @@
 # configs
 
-![CI](https://github.com/ntnyq/configs/workflows/CI/badge.svg)
+Opinionable configs
 
-## ESLint
+## Usage
 
-**[eslint-config](./packages/eslint-config)**
+```shell
+$ pnpm add @ntnyq/eslint-config @ntnyq/prettier-config -D
+```
 
-**[eslint-config-prettier](./packages/eslint-config-prettier)**
+```json5
+// package.json
+{
+  "prettier": "@ntnyq/prettier-config",
+  "eslintConfig": {
+    "root": true,
+    "extends": "@ntnyq/eslint-config"
+  }
+}
+```
 
-### ESLint with VueJs
+## Prior Art
 
-**[eslint-config-vue](./packages/eslint-config-vue)**
+- [@antfu/eslint-config](https://github.com/antfu/eslint-config)
+- [@element-plus/eslint-config](https://github.com/element-plus/element-plus/tree/dev/internal/eslint-config)
 
-**[eslint-config-prettier-vue](./packages/eslint-config-prettier-vue)**
-
-### ESLint with React
-
-**[eslint-config-react](./packages/eslint-config-react)**
-
-**[eslint-config-prettier-react](./packages/eslint-config-prettier-react)**
-
-## ESLint with TypeScript
-
-**[eslint-config-typescript](./packages/eslint-config-typescript)**
-
-**[eslint-config-prettier-typescript](./packages/eslint-config-prettier-typescript)**
-
-## StyleLint
-
-**[stylelint-config](./packages/stylelint-config)**
-
-**[stylelint-config-scss](./packages/stylelint-config-scss)**
-
-## Prettier
-
-**[prettier-config](./packages/prettier-config)**

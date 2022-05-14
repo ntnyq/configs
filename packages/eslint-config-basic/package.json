@@ -1,7 +1,6 @@
 {
-  "name": "@ntnyq/eslint-config",
+  "name": "@ntnyq/eslint-config-basic",
   "version": "1.0.0",
-  "description": "",
   "keywords": [],
   "license": "MIT",
   "author": {
@@ -13,9 +12,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ntnyq/eslint-config-vue": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.18.0",
-    "@typescript-eslint/parser": "^5.18.0",
+    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.26.0",
@@ -28,11 +25,10 @@
     "jsonc-eslint-parser": "^2.1.0",
     "yaml-eslint-parser": "^0.5.0"
   },
+  "devDependencies": {
+    "eslint": "^8.15.0"
+  },
   "publishConfig": {
     "access": "public"
-  },
-  "devDependencies": {
-    "eslint": "^8.15.0",
-    "typescript": "^4.0.0"
   }
 }

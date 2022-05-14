@@ -1,131 +1,128 @@
 /**
- * Based on TypeScript ESLint Rules
- *
- * @see https://github.com/typescript-eslint/typescript-eslint
- * @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser
- * @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
+ * @file ESLint config for TypeScript
  */
+
+const basic = require(`@ntnyq/eslint-config-basic`)
 
 module.exports = {
   extends: [
-    '@ntnyq',
-    // Enable all the recommended rules for @typescript-eslint/eslint-plugin
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/typescript',
+    `@ntnyq/eslint-config-basic`,
+    `plugin:import/typescript`,
+    `plugin:@typescript-eslint/recommended`,
   ],
 
-  // Use @typescript-eslint/eslint-plugin
-  plugins: ['@typescript-eslint'],
-
-  // Use @typescript-eslint/parser
-  parser: '@typescript-eslint/parser',
-
-  // Set options for @typescript-eslint/parser
-  parserOptions: {
-    // Set default project value
-    // @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsproject
-    project: ['tsconfig.json', 'packages/**/tsconfig.json'],
+  settings: {
+    'import/resolver': {
+      node: { extensions: [`.js`, `.jsx`, `.mjs`, `.ts`, `.tsx`, `.d.ts`] },
+    },
   },
 
-  // Rules overrides
+  overrides: basic.overrides,
+
   rules: {
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
-    'brace-style': 'off',
-    '@typescript-eslint/brace-style': [
-      'error',
-      '1tbs',
-      {
-        allowSingleLine: true,
-      },
-    ],
+    'import/named': `off`,
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
-    'comma-spacing': 'off',
-    '@typescript-eslint/comma-spacing': [
-      'error',
-      {
-        before: false,
-        after: true,
-      },
-    ],
+    // TS
+    '@typescript-eslint/semi': [`error`, `never`],
+    '@typescript-eslint/ban-ts-comment': [`error`, {
+      'ts-ignore': `allow-with-description`,
+    }],
+    '@typescript-eslint/member-delimiter-style': [`error`, {
+      multiline: { delimiter: `none` },
+    }],
+    '@typescript-eslint/type-annotation-spacing': [`error`, {}],
+    '@typescript-eslint/consistent-type-imports': [`error`, {
+      prefer: `type-imports`,
+      disallowTypeAnnotations: false,
+    }],
+    '@typescript-eslint/consistent-type-definitions': [`error`, `interface`],
+    '@typescript-eslint/consistent-indexed-object-style': [`error`, `record`],
+    '@typescript-eslint/prefer-ts-expect-error': `error`,
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/keyword-spacing.md
-    'keyword-spacing': 'off',
-    '@typescript-eslint/keyword-spacing': [
-      'error',
-      {
-        before: true,
-        after: true,
-        overrides: {
-          return: { after: true },
-          throw: { after: true },
-          case: { after: true },
-        },
-      },
-    ],
+    // Override JS
+    'no-useless-constructor': `off`,
+    indent: `off`,
+    '@typescript-eslint/indent': [`error`, 2, {
+      SwitchCase: 1,
+      VariableDeclarator: 1,
+      outerIIFEBody: 1,
+      MemberExpression: 1,
+      FunctionDeclaration: { parameters: 1, body: 1 },
+      FunctionExpression: { parameters: 1, body: 1 },
+      CallExpression: { arguments: 1 },
+      ArrayExpression: 1,
+      ObjectExpression: 1,
+      ImportDeclaration: 1,
+      flatTernaryExpressions: false,
+      ignoreComments: false,
+      ignoredNodes: [
+        `TemplateLiteral *`,
+        `JSXElement`,
+        `JSXElement > *`,
+        `JSXAttribute`,
+        `JSXIdentifier`,
+        `JSXNamespacedName`,
+        `JSXMemberExpression`,
+        `JSXSpreadAttribute`,
+        `JSXExpressionContainer`,
+        `JSXOpeningElement`,
+        `JSXClosingElement`,
+        `JSXFragment`,
+        `JSXOpeningFragment`,
+        `JSXClosingFragment`,
+        `JSXText`,
+        `JSXEmptyExpression`,
+        `JSXSpreadChild`,
+        `TSTypeParameterInstantiation`,
+      ],
+      offsetTernaryExpressions: true,
+    }],
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
-    'lines-between-class-members': 'off',
-    '@typescript-eslint/lines-between-class-members': [
-      'error',
-      'always',
-      {
-        exceptAfterSingleLine: false,
-      },
-    ],
+    'no-unused-vars': `off`,
+    '@typescript-eslint/no-unused-vars': [`error`, {
+      argsIgnorePattern: `^_`,
+      ignoreRestSiblings: true,
+    }],
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
-    'no-empty-function': 'off',
-    '@typescript-eslint/no-empty-function': ['error'],
+    'no-redeclare': `off`,
+    '@typescript-eslint/no-redeclare': `error`,
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
-    'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': ['error', 'functions'],
+    quotes: `off`,
+    '@typescript-eslint/quotes': [`error`, `backtick`, {
+      avoidEscape: true,
+    }],
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
-    'no-extra-semi': 'off',
-    '@typescript-eslint/no-extra-semi': ['error'],
+    'no-use-before-define': `off`,
+    '@typescript-eslint/no-use-before-define': [`error`, {
+      functions: false,
+      classes: false,
+      variables: true,
+    }],
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      {
-        vars: 'all',
-        args: 'after-used',
-        ignoreRestSiblings: true,
-      },
-    ],
+    'brace-style': `off`,
+    '@typescript-eslint/brace-style': [`error`, `1tbs`, {
+      allowSingleLine: true,
+    }],
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
-    'no-use-before-define': 'off',
-    // FIXME: config it properly
-    '@typescript-eslint/no-use-before-define': ['off'],
+    'comma-dangle': `off`,
+    '@typescript-eslint/comma-dangle': [`error`, `always-multiline`],
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
-    quotes: 'off',
-    '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
+    'object-curly-spacing': `off`,
+    '@typescript-eslint/object-curly-spacing': [`error`, `always`],
 
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
-    semi: 'off',
-    '@typescript-eslint/semi': ['error', 'never'],
-
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-before-function-paren.md
-    'space-before-function-paren': 'off',
-    '@typescript-eslint/space-before-function-paren': ['error', 'always'],
-
-    // Default export should not be encouraged in typescript
-    'import/prefer-default-export': 'off',
-
-    // Allow functions in expressions not to be checked
-    // @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
-    '@typescript-eslint/explicit-function-return-type': [
-      'warn',
-      {
-        allowExpressions: true,
-        allowTypedFunctionExpressions: true,
-        allowHigherOrderFunctions: true,
-      },
-    ],
+    // OFF
+    '@typescript-eslint/naming-convention': `off`,
+    '@typescript-eslint/camelcase': `off`,
+    '@typescript-eslint/explicit-function-return-type': `off`,
+    '@typescript-eslint/explicit-member-accessibility': `off`,
+    '@typescript-eslint/no-explicit-any': `off`,
+    '@typescript-eslint/no-parameter-properties': `off`,
+    '@typescript-eslint/no-empty-interface': `off`,
+    '@typescript-eslint/ban-ts-ignore': `off`,
+    '@typescript-eslint/no-empty-function': `off`,
+    '@typescript-eslint/no-non-null-assertion': `off`,
+    '@typescript-eslint/explicit-module-boundary-types': `off`,
+    '@typescript-eslint/ban-types': `off`,
+    '@typescript-eslint/no-namespace': `off`,
   },
 }

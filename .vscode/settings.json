@@ -1,23 +1,39 @@
 {
-  "[scss]": {
-    "editor.formatOnSave": false
-  },
-  "[css]": {
-    "editor.formatOnSave": false
-  },
-  "[vue]": {
-    "editor.formatOnSave": false
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+  "cSpell.words": [
+    "antfu",
+    "bumpp",
+    "ependencies",
+    "eqeqeq",
+    "iife",
+    "jsdelivr",
+    "pnpm",
+    "stroustrup",
+    "vitepress",
+    "vuepress"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
   "[javascript]": {
     "editor.formatOnSave": false
   },
-  "cSpell.words": [
-    "Cyclomatic",
-    "noopener",
-    "noreferrer",
-    "stylelintrc",
-    "trbl",
-    "uncategorized",
-    "unspaced"
-  ]
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.formatOnSave": false
+  }
 }

@@ -16,6 +16,6 @@ in `package.json`
 
 ```json
 {
-    "prettier": "@ntnyq/prettier-config"
+  "prettier": "@ntnyq/prettier-config"
 }
 ```
