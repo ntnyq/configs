@@ -184,7 +184,7 @@ module.exports = {
     'template-curly-spacing': `error`,
     'generator-star-spacing': `off`,
     'arrow-parens': [`error`, `as-needed`, {
-      requireForBlockBody: true,
+      requireForBlockBody: false,
     }],
     quotes: [`error`, `backtick`, {
       avoidEscape: true,

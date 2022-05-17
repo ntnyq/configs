@@ -53,8 +53,12 @@ module.exports = {
     'vue/no-v-text-v-html-on-component': `error`,
     'vue/padding-line-between-blocks': [`error`, `always`],
     'vue/prefer-separate-static-class': `error`,
+    'vue/next-tick-style': [`error`, `promise`],
+    'vue/no-constant-condition': [`error`],
+    'vue/prefer-true-attribute-shorthand': [`error`, `always`],
 
     // extensions
+    'vue/this-in-template': [`error`, `never`],
     'vue/array-bracket-spacing': [`error`, `never`],
     'vue/arrow-spacing': [`error`, { before: true, after: true }],
     'vue/block-spacing': [`error`, `always`],
@@ -67,8 +71,8 @@ module.exports = {
     'vue/eqeqeq': [`error`, `smart`],
     'vue/key-spacing': [`error`, { beforeColon: false, afterColon: true }],
     'vue/keyword-spacing': [`error`, { before: true, after: true }],
-    'vue/no-constant-condition': `warn`,
     'vue/no-empty-pattern': `error`,
+    'vue/prefer-import-from-vue': `error`,
     'vue/no-extra-parens': [`error`, `functions`],
     'vue/no-irregular-whitespace': `error`,
     'vue/no-loss-of-precision': `error`,
@@ -81,6 +85,9 @@ module.exports = {
     'vue/object-curly-newline': [`error`, {
       multiline: true,
       consistent: true,
+    }],
+    'vue/no-static-inline-styles': [`error`, {
+      allowBinding: true,
     }],
     'vue/object-curly-spacing': [`error`, `always`],
     'vue/object-property-newline': [`error`, {
