@@ -14,6 +14,9 @@ module.exports = {
         'no-unused-vars': `off`,
         'no-undef': `off`,
         '@typescript-eslint/no-unused-vars': `off`,
+
+        // Only in Vue SFC
+        'vue/prefer-import-from-vue': `error`,
       },
     },
   ],
@@ -72,7 +75,6 @@ module.exports = {
     'vue/key-spacing': [`error`, { beforeColon: false, afterColon: true }],
     'vue/keyword-spacing': [`error`, { before: true, after: true }],
     'vue/no-empty-pattern': `error`,
-    'vue/prefer-import-from-vue': `error`,
     'vue/no-extra-parens': [`error`, `functions`],
     'vue/no-irregular-whitespace': `error`,
     'vue/no-loss-of-precision': `error`,
