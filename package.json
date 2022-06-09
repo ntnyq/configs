@@ -11,10 +11,10 @@
   "devDependencies": {
     "@ntnyq/eslint-config": "workspace:*",
     "bumpp": "^7.1.1",
-    "eslint": "^8.15.0",
+    "eslint": "^8.17.0",
     "husky": "^8.0.1",
-    "lint-staged": "^12.4.1",
-    "pnpm": "^7.1.0"
+    "lint-staged": "^13.0.1",
+    "pnpm": "^7.1.9"
   },
   "lint-staged": {
     "*.{js,ts,json,md,yaml}": "eslint --fix"
