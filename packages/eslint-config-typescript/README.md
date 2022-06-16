@@ -1,4 +1,4 @@
-# EsLint config for TypeScript
+# ESLint config for TypeScript
 
 ## Usage
 

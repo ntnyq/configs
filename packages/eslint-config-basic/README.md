@@ -1,4 +1,4 @@
-# EsLint config
+# ESLint config
 
 ## Usage
 
