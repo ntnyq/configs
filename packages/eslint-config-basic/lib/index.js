@@ -123,6 +123,7 @@ module.exports = {
       files: [`*.d.ts`],
       rules: {
         'import/no-duplicates': `off`,
+        'import/newline-after-import': `off`,
       },
     },
     {
@@ -186,8 +187,9 @@ module.exports = {
     'arrow-parens': [`error`, `as-needed`, {
       requireForBlockBody: false,
     }],
-    quotes: [`error`, `backtick`, {
+    quotes: [`error`, `single`, {
       avoidEscape: true,
+      allowTemplateLiterals: true,
     }],
     'prefer-const': [`error`, {
       destructuring: `any`,
@@ -306,5 +308,6 @@ module.exports = {
 
     // comments
     'eslint-comments/no-unused-disable': [`error`],
+    'eslint-comments/disable-enable-pair': [`error`, { allowWholeFile: true }],
   },
 }

@@ -88,8 +88,9 @@ module.exports = {
     '@typescript-eslint/no-redeclare': `error`,
 
     quotes: `off`,
-    '@typescript-eslint/quotes': [`error`, `backtick`, {
+    '@typescript-eslint/quotes': [`error`, `single`, {
       avoidEscape: true,
+      allowTemplateLiterals: true,
     }],
 
     'no-use-before-define': `off`,

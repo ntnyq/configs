@@ -28,16 +28,11 @@ module.exports = {
 
   rules: {
     // OFF
-    'vue/max-attributes-per-line': `off`,
     'vue/no-v-html': `off`,
     'vue/require-prop-types': `off`,
     'vue/require-default-prop': `off`,
     'vue/multi-word-component-names': `off`,
     'vue/no-setup-props-destructure': `off`,
-
-    'vue/component-tags-order': [`error`, {
-      order: [`template`, `script`, `style`],
-    }],
     'vue/block-tag-newline': [`error`, {
       singleline: `always`,
       multiline: `always`,
@@ -109,5 +104,65 @@ module.exports = {
       nonwords: false,
     }],
     'vue/template-curly-spacing': `error`,
+    'vue/component-tags-order': [`error`, {
+      order: [[`template`, `script`], `style`],
+    }],
+    'vue/attributes-order': [`error`, {
+      order: [
+        `EVENTS`, // '@click="functionCall"', 'v-on="event"'
+        `TWO_WAY_BINDING`, // 'v-model'
+        `OTHER_DIRECTIVES`, // 'v-custom-directive'
+        `LIST_RENDERING`, // 'v-for item in items'
+        `CONDITIONALS`, //  'v-if', 'v-show', 'v-cloak'
+        `CONTENT`, // 'v-text', 'v-html'
+        `UNIQUE`, // 'ref', 'key', 'v-slot', 'slot'
+        `DEFINITION`, // 'is', 'v-is'
+        `OTHER_ATTR`, // 'custom-prop="foo"', ':prop="foo"'
+        `RENDER_MODIFIERS`, // 'v-once', 'v-pre'
+        `GLOBAL`, // 'id'
+      ],
+      alphabetical: false,
+    }],
+    'vue/order-in-components': [`error`, {
+      order: [
+        `el`,
+        `name`,
+        `key`,
+        `parent`,
+        `functional`,
+        [`provide`, `inject`],
+        [`delimiters`, `comments`],
+        [`components`, `directives`, `filters`],
+        `extends`,
+        `mixins`,
+        `layout`,
+        `middleware`,
+        `validate`,
+        `scrollToTop`,
+        `transition`,
+        `loading`,
+        `inheritAttrs`,
+        `model`,
+        [`props`, `propsData`],
+        `emits`,
+        `setup`,
+        `asyncData`,
+        `computed`,
+        `data`,
+        `fetch`,
+        `head`,
+        `methods`,
+        [`template`, `render`],
+        `watch`,
+        `watchQuery`,
+        `LIFECYCLE_HOOKS`,
+        `renderError`,
+        `ROUTER_GUARDS`,
+      ],
+    }],
+    'vue/max-attributes-per-line': [`error`, {
+      singleline: 1,
+      multiline: 1,
+    }],
   },
 }

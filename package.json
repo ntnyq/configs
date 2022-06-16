@@ -2,19 +2,19 @@
   "name": "@ntnyq/configs",
   "version": "1.0.2",
   "private": true,
-  "packageManager": "pnpm@7.1.0",
+  "packageManager": "pnpm@7.2.1",
   "scripts": {
     "lint": "eslint .",
     "prepare": "husky install",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "release": "bumpp package.json packages/*/package.json && pnpm -r publish --access public"
   },
   "devDependencies": {
     "@ntnyq/eslint-config": "workspace:*",
-    "bumpp": "^7.1.1",
+    "bumpp": "^8.1.0",
     "eslint": "^8.17.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1",
-    "pnpm": "^7.1.9"
+    "pnpm": "^7.2.1"
   },
   "lint-staged": {
     "*.{js,ts,json,md,yaml}": "eslint --fix"
