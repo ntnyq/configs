@@ -7,9 +7,9 @@
     "name": "ntnyq",
     "email": "ntnyq13@gmail.com"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "files": [
-    "lib"
+    "index.js"
   ],
   "dependencies": {
     "eslint-config-standard": "^17.0.0",
@@ -18,7 +18,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsonc": "^2.3.0",
     "eslint-plugin-markdown": "^2.2.1",
-    "eslint-plugin-n": "^15.2.2",
+    "eslint-plugin-n": "^15.2.3",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unicorn": "^42.0.0",
     "eslint-plugin-yml": "^1.0.0",
@@ -26,7 +26,7 @@
     "yaml-eslint-parser": "^1.0.1"
   },
   "devDependencies": {
-    "eslint": "^8.17.0"
+    "eslint": "^8.18.0"
   },
   "publishConfig": {
     "access": "public"
