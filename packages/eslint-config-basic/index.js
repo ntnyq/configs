@@ -142,6 +142,7 @@ module.exports = {
       files: [`*.test.ts`, `*.test.js`, `*.spec.ts`, `*.spec.js`],
       rules: {
         'no-unused-expressions': `off`,
+        'max-lines-per-function': `off`,
       },
     },
     {
