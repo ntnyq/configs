@@ -1,6 +1,6 @@
 {
   "name": "@ntnyq/configs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "packageManager": "pnpm@7.13.5",
   "scripts": {
