@@ -9,14 +9,14 @@ importers:
       eslint: ^8.25.0
       husky: ^8.0.1
       lint-staged: ^13.0.3
-      pnpm: ^7.13.4
+      pnpm: ^7.13.5
     devDependencies:
       '@ntnyq/eslint-config': link:packages/eslint-config
       bumpp: 8.2.1
       eslint: 8.25.0
       husky: 8.0.1
       lint-staged: 13.0.3
-      pnpm: 7.13.4
+      pnpm: 7.13.5
 
   packages/eslint-config:
     specifiers:
@@ -2053,8 +2053,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /pnpm/7.13.4:
-    resolution: {integrity: sha512-ZaP5+PRzXI0g4KijU7zx4hi7RUJcSYBJIb90e+lyTeQyRw91+peJoFAzWa63+4fjJIz6CqY0cNkP7trZXh5l8w==}
+  /pnpm/7.13.5:
+    resolution: {integrity: sha512-7+xyYPunBiAAJclpmUU2CTqe7uHipDjguUF2qmd9+r8hfZEVj0TnMTfblPnRF9aiVsmE4X3zRPlY3A5zk7r73w==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true

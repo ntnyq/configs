@@ -114,6 +114,9 @@ module.exports = {
     'object-curly-spacing': `off`,
     '@typescript-eslint/object-curly-spacing': [`error`, `always`],
 
+    'func-call-spacing': `off`,
+    '@typescript-eslint/func-call-spacing': [`error`, `never`],
+
     // OFF
     '@typescript-eslint/naming-convention': `off`,
     '@typescript-eslint/camelcase': `off`,
