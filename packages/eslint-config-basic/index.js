@@ -56,11 +56,13 @@ module.exports = {
         'jsonc/comma-style': [`error`, `last`],
         'jsonc/indent': [`error`, 2],
         'jsonc/key-spacing': [`error`, {
-          beforeColon: false, afterColon: true,
+          beforeColon: false,
+          afterColon: true,
         }],
         'jsonc/no-octal-escape': `error`,
         'jsonc/object-curly-newline': [`error`, {
-          multiline: true, consistent: true,
+          multiline: true,
+          consistent: true,
         }],
         'jsonc/object-curly-spacing': [`error`, `always`],
         'jsonc/object-property-newline': [`error`, {
@@ -288,6 +290,10 @@ module.exports = {
     'unicorn/prefer-type-error': `error`,
     // Use new when throwing error
     'unicorn/throw-new-error': `error`,
+    // Disallow awaiting non-promise values
+    'unicorn/no-unnecessary-await': `error`,
+    // Enforce consistent brace style for `case` clauses
+    'unicorn/switch-case-braces': [`error`, `avoid`],
 
     // yml
     'yml/quotes': [`error`, {
