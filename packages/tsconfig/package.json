@@ -1,0 +1,16 @@
+{
+  "name": "@ntnyq/tsconfig",
+  "version": "1.0.7",
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
+  },
+  "files": [
+    "tsconfig.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
