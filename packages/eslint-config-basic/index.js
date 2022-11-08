@@ -187,6 +187,8 @@ module.exports = {
     'prefer-template': `error`,
     'template-curly-spacing': `error`,
     'generator-star-spacing': `off`,
+    'no-empty-static-block': `error`,
+    'no-new-native-nonconstructor': `error`,
     'arrow-parens': [`error`, `as-needed`, {
       requireForBlockBody: false,
     }],
