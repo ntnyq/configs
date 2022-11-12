@@ -7,16 +7,16 @@ importers:
       '@ntnyq/eslint-config': workspace:*
       bumpp: ^8.2.1
       eslint: ^8.27.0
-      husky: ^8.0.1
+      husky: ^8.0.2
       lint-staged: ^13.0.3
-      pnpm: ^7.14.2
+      pnpm: ^7.15.0
     devDependencies:
       '@ntnyq/eslint-config': link:packages/eslint-config
       bumpp: 8.2.1
       eslint: 8.27.0
-      husky: 8.0.1
+      husky: 8.0.2
       lint-staged: 13.0.3
-      pnpm: 7.14.2
+      pnpm: 7.15.0
 
   packages/eslint-config:
     specifiers:
@@ -29,7 +29,7 @@ importers:
       eslint-plugin-import: ^2.26.0
       eslint-plugin-jsonc: ^2.5.0
       eslint-plugin-markdown: ^3.0.0
-      eslint-plugin-n: ^15.5.0
+      eslint-plugin-n: ^15.5.1
       eslint-plugin-promise: ^6.1.1
       eslint-plugin-unicorn: ^44.0.2
       eslint-plugin-yml: ^1.2.0
@@ -45,7 +45,7 @@ importers:
       eslint-plugin-import: 2.26.0_jnohwm7eexgw7uduhweedcbnpe
       eslint-plugin-jsonc: 2.5.0_eslint@8.27.0
       eslint-plugin-markdown: 3.0.0_eslint@8.27.0
-      eslint-plugin-n: 15.5.0_eslint@8.27.0
+      eslint-plugin-n: 15.5.1_eslint@8.27.0
       eslint-plugin-promise: 6.1.1_eslint@8.27.0
       eslint-plugin-unicorn: 44.0.2_eslint@8.27.0
       eslint-plugin-yml: 1.2.0_eslint@8.27.0
@@ -64,20 +64,20 @@ importers:
       eslint-plugin-import: ^2.26.0
       eslint-plugin-jsonc: ^2.5.0
       eslint-plugin-markdown: ^3.0.0
-      eslint-plugin-n: ^15.5.0
+      eslint-plugin-n: ^15.5.1
       eslint-plugin-promise: ^6.1.1
       eslint-plugin-unicorn: ^44.0.2
       eslint-plugin-yml: ^1.2.0
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^1.1.0
     dependencies:
-      eslint-config-standard: 17.0.0_cyo7mwdgoypgk7zxnkwskmm2fq
+      eslint-config-standard: 17.0.0_qmmcbu32ybj7ict4ieqqyvwr3m
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.27.0
       eslint-plugin-html: 7.1.0
       eslint-plugin-import: 2.26.0_eslint@8.27.0
       eslint-plugin-jsonc: 2.5.0_eslint@8.27.0
       eslint-plugin-markdown: 3.0.0_eslint@8.27.0
-      eslint-plugin-n: 15.5.0_eslint@8.27.0
+      eslint-plugin-n: 15.5.1_eslint@8.27.0
       eslint-plugin-promise: 6.1.1_eslint@8.27.0
       eslint-plugin-unicorn: 44.0.2_eslint@8.27.0
       eslint-plugin-yml: 1.2.0_eslint@8.27.0
@@ -811,7 +811,7 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  /eslint-config-standard/17.0.0_cyo7mwdgoypgk7zxnkwskmm2fq:
+  /eslint-config-standard/17.0.0_qmmcbu32ybj7ict4ieqqyvwr3m:
     resolution: {integrity: sha512-/2ks1GKyqSOkH7JFvXJicu0iMpoojkwB+f5Du/1SC0PtBL+s8v30k9njRZ21pm2drKYm2342jFnGWzttxPmZVg==}
     peerDependencies:
       eslint: ^8.0.1
@@ -821,7 +821,7 @@ packages:
     dependencies:
       eslint: 8.27.0
       eslint-plugin-import: 2.26.0_eslint@8.27.0
-      eslint-plugin-n: 15.5.0_eslint@8.27.0
+      eslint-plugin-n: 15.5.1_eslint@8.27.0
       eslint-plugin-promise: 6.1.1_eslint@8.27.0
     dev: false
 
@@ -998,8 +998,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-n/15.5.0_eslint@8.27.0:
-    resolution: {integrity: sha512-VCqQiZDpdm1Q9grnvy+XsENZoXDgTLqPHRQwgl9qFNNgTKR4YEnQOMN0pFB/9TbmrQ88jdeTnqTcNwRvjqMOtg==}
+  /eslint-plugin-n/15.5.1_eslint@8.27.0:
+    resolution: {integrity: sha512-kAd+xhZm7brHoFLzKLB7/FGRFJNg/srmv67mqb7tto22rpr4wv/LV6RuXzAfv3jbab7+k1wi42PsIhGviywaaw==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -1458,8 +1458,8 @@ packages:
     engines: {node: '>=12.20.0'}
     dev: true
 
-  /husky/8.0.1:
-    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+  /husky/8.0.2:
+    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -2099,8 +2099,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /pnpm/7.14.2:
-    resolution: {integrity: sha512-NSxrIaRW07jFQQ1fPFFOA8eMfuogsMeygOKd3zaFgyJBdo1oh61jl2JjWc+w0XNzWIMG7/v9HK7nP8RTL5NO3g==}
+  /pnpm/7.15.0:
+    resolution: {integrity: sha512-GGQ5+MCwD0bpq+65uitpgO1+ZusZ1keO5ebG/CH6ciu1ohnZj5Y3X374Ow/CBApa+Jw2/NUifVRz2fW4JChftA==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
