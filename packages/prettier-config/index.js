@@ -81,14 +81,5 @@ module.exports = {
         singleQuote: false,
       },
     },
-
-    {
-      files: `*.json`,
-
-      options: {
-        // Json doesn't support trailling Comma
-        trailingComma: `none`,
-      },
-    },
   ],
 }
