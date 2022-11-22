@@ -2,7 +2,7 @@
   "name": "@ntnyq/configs",
   "version": "1.0.9",
   "private": true,
-  "packageManager": "pnpm@7.14.1",
+  "packageManager": "pnpm@7.17.0",
   "scripts": {
     "lint": "eslint .",
     "prepare": "husky install",
@@ -11,12 +11,12 @@
   "devDependencies": {
     "@ntnyq/eslint-config": "workspace:*",
     "bumpp": "^8.2.1",
-    "eslint": "^8.27.0",
+    "eslint": "^8.28.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
-    "pnpm": "^7.15.0"
+    "pnpm": "^7.17.0"
   },
   "lint-staged": {
-    "*.{js,ts,json,md,yaml}": "eslint --fix"
+    "*.{js,ts,json,md,yml,yaml}": "eslint --fix"
   }
 }
