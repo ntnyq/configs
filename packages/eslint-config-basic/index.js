@@ -296,6 +296,10 @@ module.exports = {
     'unicorn/no-unnecessary-await': `error`,
     // Enforce consistent brace style for `case` clauses
     'unicorn/switch-case-braces': [`error`, `avoid`],
+    // Disallow comparing `undefined` using `typeof`
+    'unicorn/no-typeof-undefined': `error`,
+    // Prefer using `Set#size` instead of `Array#length`
+    'unicorn/prefer-set-size': `error`,
 
     // yml
     'yml/quotes': [`error`, {
