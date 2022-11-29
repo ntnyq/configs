@@ -2,20 +2,78 @@
 
 Opinionable configs
 
-## Usage
+## ESLint config
 
 ```shell
-$ pnpm add @ntnyq/eslint-config @ntnyq/prettier-config -D
+$ pnpm add eslint typescript @ntnyq/eslint-config -D
 ```
 
-```json5
-// package.json
+### Configuration
+
+Create a file `.eslintrc.json` in project root:
+
+```json
 {
-  "prettier": "@ntnyq/prettier-config",
-  "eslintConfig": {
-    "root": true,
-    "extends": "@ntnyq/eslint-config"
+  "root": true,
+  "extends": ["@ntnyq"]
+}
+```
+
+Add lint scripts in `package.json`:
+
+```json
+{
+  "scripts": {
+    "lint": "eslint ."
   }
+}
+```
+
+Intergrated with VS Code:
+
+```json
+{
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
+    "markdown",
+    "yaml",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
+
+Avoid conflict with other formatter:
+
+```json
+{
+  "[javascript][typescript][vue]": {
+    "editor.formatOnSave": false
+  }
+}
+```
+
+## Prettier config
+
+```shell
+$ pnpm add prettier @ntnyq/prettier-config -D
+```
+
+### Configuration
+
+Config in `package.json`:
+
+```json
+{
+  "prettier": "@ntnyq/prettier-config"
 }
 ```
 
@@ -23,4 +81,3 @@ $ pnpm add @ntnyq/eslint-config @ntnyq/prettier-config -D
 
 - [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 - [@element-plus/eslint-config](https://github.com/element-plus/element-plus/tree/dev/internal/eslint-config)
-
