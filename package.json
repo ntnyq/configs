@@ -13,10 +13,10 @@
     "bumpp": "^8.2.1",
     "eslint": "^8.28.0",
     "husky": "^8.0.2",
-    "lint-staged": "^13.0.3",
-    "pnpm": "^7.17.0"
+    "nano-staged": "^0.8.0",
+    "pnpm": "^7.17.1"
   },
-  "lint-staged": {
+  "nano-staged": {
     "*.{js,ts,json,md,yml,yaml}": "eslint --fix"
   }
 }
