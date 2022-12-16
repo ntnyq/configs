@@ -2,7 +2,7 @@
   "name": "@ntnyq/configs",
   "version": "1.2.0",
   "private": true,
-  "packageManager": "pnpm@7.18.1",
+  "packageManager": "pnpm@7.18.2",
   "scripts": {
     "lint": "eslint .",
     "prepare": "husky install",
@@ -14,7 +14,7 @@
     "eslint": "^8.29.0",
     "husky": "^8.0.2",
     "nano-staged": "^0.8.0",
-    "pnpm": "^7.18.1"
+    "pnpm": "^7.18.2"
   },
   "nano-staged": {
     "*.{js,ts,json,md,yml,yaml}": "eslint --fix"

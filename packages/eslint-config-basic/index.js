@@ -111,12 +111,18 @@ module.exports = {
             `optionalDependencies`,
             `devDependencies`,
             `husky`,
+            `prettier`,
+            `nano-staged`,
             `lint-staged`,
             `eslintConfig`,
           ],
         },
         {
           pathPattern: `^(?:dev|peer|optional|bundled)?[Dd]ependencies$`,
+          order: { type: `asc` },
+        },
+        {
+          pathPattern: `^scripts$`,
           order: { type: `asc` },
         }],
       },
@@ -177,9 +183,6 @@ module.exports = {
     'import/no-named-as-default-member': `off`,
     'import/newline-after-import': [`error`],
 
-    // common
-    'comma-dangle': [`error`, `always-multiline`],
-
     // es6+
     'no-var': [`error`],
     'prefer-rest-params': `error`,
@@ -226,7 +229,7 @@ module.exports = {
     'array-callback-return': `error`,
     'block-scoped-var': `error`,
     'consistent-return': `off`,
-    'no-alert': `warn`,
+    'no-alert': `error`,
     'no-case-declarations': `error`,
     'no-multi-spaces': `error`,
     'no-multi-str': `error`,
@@ -236,7 +239,9 @@ module.exports = {
     'vars-on-top': `error`,
     'require-await': `off`,
     'no-return-assign': `off`,
+    'one-var': [`error`, `never`],
     'operator-linebreak': [`error`, `before`],
+    'comma-dangle': [`error`, `always-multiline`],
     'max-params': [`error`, { max: 5 }],
     'max-depth': [`error`, { max: 5 }],
     'max-nested-callbacks': [`error`, { max: 10 }],
