@@ -1,0 +1,25 @@
+{
+  "name": "@ntnyq/eslint-config-astro",
+  "version": "1.2.1",
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@ntnyq/eslint-config-typescript": "workspace:*",
+    "astro-eslint-parser": "^0.9.5",
+    "eslint-plugin-astro": "^0.21.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  }
+}
