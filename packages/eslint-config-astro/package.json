@@ -13,13 +13,13 @@
   ],
   "dependencies": {
     "@ntnyq/eslint-config-typescript": "workspace:*",
-    "astro-eslint-parser": "^0.9.5",
-    "eslint-plugin-astro": "^0.21.1"
+    "astro-eslint-parser": "^0.11.0",
+    "eslint-plugin-astro": "^0.23.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
-    "eslint": "^8.32.0"
+    "eslint": "^8.33.0"
   }
 }
