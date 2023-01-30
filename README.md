@@ -15,7 +15,9 @@ Create a file `.eslintrc.json` in project root:
 ```json
 {
   "root": true,
-  "extends": ["@ntnyq"]
+  "extends": [
+    "@ntnyq"
+  ]
 }
 ```
 
@@ -35,15 +37,18 @@ Intergrated with VS Code:
 {
   "eslint.enable": true,
   "eslint.validate": [
-    "javascript",
-    "typescript",
     "vue",
     "html",
-    "markdown",
     "yaml",
     "json",
     "jsonc",
-    "json5"
+    "json5",
+    "astro",
+    "markdown",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
@@ -81,3 +86,7 @@ Config in `package.json`:
 
 - [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 - [@element-plus/eslint-config](https://github.com/element-plus/element-plus/tree/dev/internal/eslint-config)
+
+## License
+
+[MIT](./LICENSE) License © 2020-PRESENT [ntnyq](https://github.com/ntnyq)
