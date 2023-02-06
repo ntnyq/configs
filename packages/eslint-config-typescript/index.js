@@ -36,7 +36,6 @@ module.exports = {
       disallowTypeAnnotations: false,
     }],
     '@typescript-eslint/consistent-type-definitions': [`error`, `interface`],
-    '@typescript-eslint/consistent-indexed-object-style': [`error`, `record`],
     '@typescript-eslint/prefer-ts-expect-error': `error`,
 
     // Override JS
@@ -81,11 +80,9 @@ module.exports = {
       offsetTernaryExpressions: true,
     }],
 
+    // handled by unused-imports/no-unused-imports
     'no-unused-vars': `off`,
-    '@typescript-eslint/no-unused-vars': [`error`, {
-      argsIgnorePattern: `^_`,
-      ignoreRestSiblings: true,
-    }],
+    '@typescript-eslint/no-unused-vars': `off`,
 
     'no-redeclare': `off`,
     '@typescript-eslint/no-redeclare': `error`,
@@ -95,6 +92,22 @@ module.exports = {
       avoidEscape: true,
       allowTemplateLiterals: true,
     }],
+
+    'space-before-blocks': `off`,
+    '@typescript-eslint/space-before-blocks': [`error`, `always`],
+
+    'space-before-function-paren': `off`,
+    '@typescript-eslint/space-before-function-paren': [`error`, {
+      anonymous: `always`,
+      named: `never`,
+      asyncArrow: `always`,
+    }],
+
+    'space-infix-ops': `off`,
+    '@typescript-eslint/space-infix-ops': `error`,
+
+    'keyword-spacing': `off`,
+    '@typescript-eslint/keyword-spacing': [`error`, { before: true, after: true }],
 
     'no-use-before-define': `off`,
     '@typescript-eslint/no-use-before-define': [`error`, {
@@ -108,6 +121,9 @@ module.exports = {
       allowSingleLine: true,
     }],
 
+    'comma-spacing': `off`,
+    '@typescript-eslint/comma-spacing': [`error`, { before: false, after: true }],
+
     'comma-dangle': `off`,
     '@typescript-eslint/comma-dangle': [`error`, `always-multiline`],
 
@@ -117,7 +133,22 @@ module.exports = {
     'func-call-spacing': `off`,
     '@typescript-eslint/func-call-spacing': [`error`, `never`],
 
+    'no-extra-parens': `off`,
+    '@typescript-eslint/no-extra-parens': [`error`, `functions`],
+
+    'no-dupe-class-members': `off`,
+    '@typescript-eslint/no-dupe-class-members': `error`,
+
+    'no-loss-of-precision': `off`,
+    '@typescript-eslint/no-loss-of-precision': `error`,
+
+    'lines-between-class-members': `off`,
+    '@typescript-eslint/lines-between-class-members': [`error`, `always`, {
+      exceptAfterSingleLine: true,
+    }],
+
     // OFF
+    '@typescript-eslint/consistent-indexed-object-style': `off`,
     '@typescript-eslint/naming-convention': `off`,
     '@typescript-eslint/camelcase': `off`,
     '@typescript-eslint/explicit-function-return-type': `off`,
@@ -131,5 +162,6 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': `off`,
     '@typescript-eslint/ban-types': `off`,
     '@typescript-eslint/no-namespace': `off`,
+    '@typescript-eslint/triple-slash-reference': `off`,
   },
 }

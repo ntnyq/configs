@@ -9,6 +9,8 @@ module.exports = {
     node: true,
   },
 
+  reportUnusedDisableDirectives: true,
+
   ignorePatterns: [
     `*.min.*`,
     `CHANGELOG.md`,
@@ -29,7 +31,11 @@ module.exports = {
     `!.vscode`,
   ],
 
-  plugins: [`html`, `unicorn`],
+  plugins: [
+    `html`,
+    `unicorn`,
+    `unused-imports`,
+  ],
 
   settings: {
     'import/resolver': {
@@ -89,10 +95,13 @@ module.exports = {
             `version`,
             `private`,
             `packageManager`,
+            `publisher`,
+            `displayName`,
             `description`,
             `keywords`,
             `license`,
             `author`,
+            `homepage`,
             `repository`,
             `funding`,
             `main`,
@@ -103,6 +112,7 @@ module.exports = {
             `exports`,
             `files`,
             `bin`,
+            `icon`,
             `sideEffects`,
             `scripts`,
             `peerDependencies`,
@@ -110,6 +120,11 @@ module.exports = {
             `dependencies`,
             `optionalDependencies`,
             `devDependencies`,
+            `activationEvents`,
+            `contributes`,
+            `categories`,
+            `engines`,
+            `pnpm`,
             `husky`,
             `prettier`,
             `nano-staged`,
@@ -120,6 +135,14 @@ module.exports = {
         {
           pathPattern: `^(?:dev|peer|optional|bundled)?[Dd]ependencies$`,
           order: { type: `asc` },
+        },
+        {
+          pathPattern: '^exports.*$',
+          order: [
+            'types',
+            'require',
+            'import',
+          ],
         },
         {
           pathPattern: `^scripts$`,
@@ -135,9 +158,15 @@ module.exports = {
       },
     },
     {
-      files: [`*.js`],
+      files: [`*.js`, `*.cjs`],
       rules: {
         '@typescript-eslint/no-var-requires': `off`,
+      },
+    },
+    {
+      files: [`*.ts`, `*.tsx`, `*.mts`, `*.cts`],
+      rules: {
+        'no-void': [`error`, { allowAsStatement: true }],
       },
     },
     {
@@ -169,6 +198,8 @@ module.exports = {
         'no-undef': `off`,
         'no-unused-expressions': `off`,
         'no-unused-vars': `off`,
+        'unused-imports/no-unused-imports': `off`,
+        'unused-imports/no-unused-vars': `off`,
       },
     },
   ],
@@ -200,7 +231,7 @@ module.exports = {
       allowTemplateLiterals: true,
     }],
     'prefer-const': [`error`, {
-      destructuring: `any`,
+      destructuring: `all`,
       ignoreReadBeforeAssign: true,
     }],
     'prefer-arrow-callback': [`error`, {
@@ -271,6 +302,13 @@ module.exports = {
       ignoreTemplateLiterals: true,
       ignoreTrailingComments: true,
     }],
+    'sort-imports': [`error`, {
+      ignoreCase: false,
+      ignoreDeclarationSort: true,
+      ignoreMemberSort: false,
+      memberSyntaxSortOrder: [`none`, `all`, `multiple`, `single`],
+      allowSeparatedGroups: false,
+    }],
 
     // unicorn
     // Pass error message when throwing errors
@@ -316,12 +354,13 @@ module.exports = {
     // n
     'n/no-callback-literal': `off`,
 
-    'sort-imports': [`error`, {
-      ignoreCase: false,
-      ignoreDeclarationSort: true,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: [`none`, `all`, `multiple`, `single`],
-      allowSeparatedGroups: false,
+    // unused-imports
+    'unused-imports/no-unused-imports': `error`,
+    'unused-imports/no-unused-vars': [`warn`, {
+      vars: `all`,
+      varsIgnorePattern: `^_`,
+      args: `after-used`,
+      argsIgnorePattern: `^_`,
     }],
 
     // comments
