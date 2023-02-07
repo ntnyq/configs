@@ -4,6 +4,6 @@
 
 module.exports = {
   extends: [
-    `@ntnyq/eslint-config-vue`,
+    '@ntnyq/eslint-config-vue',
   ],
 }
