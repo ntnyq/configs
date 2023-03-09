@@ -343,6 +343,8 @@ module.exports = {
     'unicorn/no-typeof-undefined': 'error',
     // Prefer using `Set#size` instead of `Array#length`
     'unicorn/prefer-set-size': 'error',
+    // Prefer using the node: protocol node v14.18 required
+    'unicorn/prefer-node-protocol': 'error',
 
     // yml
     'yml/quotes': ['error', {
