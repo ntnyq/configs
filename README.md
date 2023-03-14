@@ -4,8 +4,8 @@ Opinionable configs
 
 ## ESLint config
 
-```shell
-$ pnpm add eslint typescript @ntnyq/eslint-config -D
+```sh
+pnpm add eslint typescript @ntnyq/eslint-config prettier @ntnyq/prettier-config -D
 ```
 
 ### Configuration
