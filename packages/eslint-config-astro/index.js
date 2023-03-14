@@ -3,10 +3,7 @@
  */
 
 module.exports = {
-  extends: [
-    'plugin:astro/recommended',
-    '@ntnyq/eslint-config-typescript',
-  ],
+  extends: ['plugin:astro/recommended', '@ntnyq/eslint-config-typescript'],
 
   overrides: [
     {

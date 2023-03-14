@@ -1,5 +1,5 @@
 {
-  "name": "@ntnyq/eslint-config-typescript",
+  "name": "@ntnyq/eslint-config-prettier",
   "version": "1.4.2",
   "keywords": [],
   "license": "MIT",
@@ -12,18 +12,18 @@
     "index.js"
   ],
   "peerDependencies": {
-    "typescript": "^4.0.0"
+    "prettier": "^2.8.4"
   },
   "dependencies": {
-    "@ntnyq/eslint-config-basic": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.55.0",
-    "@typescript-eslint/parser": "^5.55.0"
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-yml": "^1.5.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
     "eslint": "^8.36.0",
-    "typescript": "^4.9.5"
+    "prettier": "^2.8.4"
   }
 }
