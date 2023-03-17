@@ -213,17 +213,8 @@ module.exports = {
   ],
 
   rules: {
-    // import
-    'import/order': 'error',
-    'import/first': 'error',
-    'import/no-mutable-exports': 'error',
-    'import/no-unresolved': 'off',
-    'import/no-absolute-path': 'off',
-    'import/no-named-as-default-member': 'off',
-    'import/newline-after-import': ['error'],
-
     // es6+
-    'no-var': ['error'],
+    'no-var': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
@@ -355,41 +346,82 @@ module.exports = {
       },
     ],
 
+    // import
+    'import/no-unresolved': 'off',
+    'import/no-absolute-path': 'off',
+    'import/no-named-as-default-member': 'off',
+
+    'import/first': 'error',
+    'import/no-mutable-exports': 'error',
+    'import/newline-after-import': 'error',
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+        'newlines-between': 'never',
+        pathGroups: [{ pattern: '@/**', group: 'internal' }],
+        pathGroupsExcludedImportTypes: ['type'],
+      },
+    ],
+
     // unicorn
-    // Pass error message when throwing errors
-    'unicorn/error-message': 'error',
-    // Uppercase regex escapes
-    'unicorn/escape-case': 'error',
-    // Array.isArray instead of instanceof
-    'unicorn/no-array-instanceof': 'error',
-    // Prevent deprecated `new Buffer()`
-    'unicorn/no-new-buffer': 'error',
-    // Keep regex literals safe!
     'unicorn/no-unsafe-regex': 'off',
-    // Lowercase number formatting for octal, hex, binary (0x1'error' instead of 0X1'error')
+
+    'unicorn/error-message': 'error',
+    'unicorn/escape-case': 'error',
+    'unicorn/no-new-buffer': 'error',
     'unicorn/number-literal-case': 'error',
-    // ** instead of Math.pow()
-    'unicorn/prefer-exponentiation-operator': 'error',
-    // includes over indexOf when checking for existence
     'unicorn/prefer-includes': 'error',
-    // String methods startsWith/endsWith instead of more complicated stuff
-    'unicorn/prefer-string-starts-ends-with': 'error',
-    // textContent instead of innerText
-    'unicorn/prefer-text-content': 'error',
-    // Enforce throwing type error when throwing error while checking typeof
     'unicorn/prefer-type-error': 'error',
-    // Use new when throwing error
     'unicorn/throw-new-error': 'error',
-    // Disallow awaiting non-promise values
     'unicorn/no-unnecessary-await': 'error',
-    // Enforce consistent brace style for `case` clauses
     'unicorn/switch-case-braces': ['error', 'avoid'],
-    // Disallow comparing `undefined` using `typeof`
     'unicorn/no-typeof-undefined': 'error',
-    // Prefer using `Set#size` instead of `Array#length`
     'unicorn/prefer-set-size': 'error',
-    // Prefer using the node: protocol node v14.18 required
+    'unicorn/better-regex': 'error',
+    'unicorn/custom-error-definition': 'error',
+    'unicorn/explicit-length-check': 'error',
+    'unicorn/new-for-builtins': 'error',
+    'unicorn/no-console-spaces': 'error',
+    'unicorn/no-for-loop': 'error',
+    'unicorn/no-hex-escape': 'error',
+    'unicorn/no-lonely-if': 'error',
+    'unicorn/prefer-keyboard-event-key': 'error',
+    'unicorn/prefer-math-trunc': 'error',
+    'unicorn/prefer-negative-index': 'error',
     'unicorn/prefer-node-protocol': 'error',
+    'unicorn/prefer-number-properties': 'error',
+    'unicorn/prefer-optional-catch-binding': 'error',
+    'unicorn/prefer-prototype-methods': 'error',
+    'unicorn/prefer-reflect-apply': 'error',
+
+    'unicorn/prefer-date-now': 'error',
+
+    // String
+    'unicorn/prefer-string-slice': 'error',
+    'unicorn/prefer-string-trim-start-end': 'error',
+    'unicorn/prefer-string-starts-ends-with': 'error',
+
+    // DOM
+    'unicorn/prefer-add-event-listener': 'error',
+    'unicorn/no-invalid-remove-event-listener': 'error',
+    'unicorn/prefer-query-selector': 'error',
+    'unicorn/prefer-modern-dom-apis': 'error',
+    'unicorn/prefer-dom-node-append': 'error',
+    'unicorn/prefer-dom-node-dataset': 'error',
+    'unicorn/prefer-dom-node-remove': 'error',
+    'unicorn/prefer-dom-node-text-content': 'error',
+
+    // Array
+    'unicorn/no-new-array': 'error',
+    'unicorn/no-instanceof-array': 'error',
+    'unicorn/no-array-push-push': 'error',
+    'unicorn/no-array-callback-reference': 'error',
+    'unicorn/no-array-method-this-argument': 'error',
+    'unicorn/prefer-array-find': 'error',
+    'unicorn/prefer-array-some': 'error',
+    'unicorn/prefer-array-flat-map': 'error',
+    'unicorn/prefer-array-index-of': 'error',
 
     // yml
     'yml/quotes': [
