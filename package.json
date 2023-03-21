@@ -2,7 +2,7 @@
   "name": "@ntnyq/configs",
   "version": "1.6.0",
   "private": true,
-  "packageManager": "pnpm@7.29.3",
+  "packageManager": "pnpm@7.30.0",
   "scripts": {
     "lint": "eslint --cache .",
     "prepare": "husky install",
@@ -15,16 +15,16 @@
   "devDependencies": {
     "@ntnyq/eslint-config": "workspace:*",
     "@ntnyq/prettier-config": "workspace:*",
-    "@types/eslint": "^8.21.2",
-    "@types/node": "^18.15.3",
+    "@types/eslint": "^8.21.3",
+    "@types/node": "^18.15.5",
     "bumpp": "^9.0.0",
     "eslint": "^8.36.0",
     "husky": "^8.0.3",
     "nano-staged": "^0.8.0",
     "npm-run-all": "^4.1.5",
-    "pnpm": "^7.29.3",
-    "vite": "^4.2.0",
-    "vitest": "^0.29.3"
+    "pnpm": "^7.30.0",
+    "vite": "^4.2.1",
+    "vitest": "^0.29.7"
   },
   "prettier": "@ntnyq/prettier-config",
   "nano-staged": {
