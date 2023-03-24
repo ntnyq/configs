@@ -15,20 +15,28 @@ module.exports = {
     '*.min.*',
     'CHANGELOG.md',
     'LICENSE*',
+
+    // Production
     'dist',
     'output',
-    'coverage',
+
     'public',
     'static',
-    'temp',
-    'packages-lock.json',
-    'pnpm-lock.yaml',
-    'yarn.lock',
-    '__snapshots__',
+
+    // Force lint
     '!.github',
     '!.vitepress',
     '!.vuepress',
     '!.vscode',
+
+    // Generated
+    'coverage',
+    '__snapshots__',
+    'packages-lock.json',
+    'pnpm-lock.yaml',
+    'yarn.lock',
+    'src/components.d.ts',
+    'src/auto-imports.d.ts',
   ],
 
   plugins: ['html', 'unicorn', 'unused-imports'],
