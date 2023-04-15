@@ -1,18 +1,21 @@
 {
+  "prettier.enable": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "eslint.validate": [
-    "javascript",
-    "typescript",
     "vue",
     "html",
     "yaml",
-    "markdown",
     "json",
     "jsonc",
-    "json5"
+    "json5",
+    "markdown",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
   ],
   "cSpell.words": [
     "antfu",
@@ -20,6 +23,7 @@
     "changelogithub",
     "ependencies",
     "eqeqeq",
+    "esbenp",
     "iife",
     "jsdelivr",
     "pnpm",

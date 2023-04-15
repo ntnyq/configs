@@ -4,7 +4,7 @@ Opinionable configs
 
 ## ESLint config
 
-```sh
+```bash
 pnpm add eslint typescript @ntnyq/eslint-config prettier @ntnyq/prettier-config -D
 ```
 
@@ -15,9 +15,7 @@ Create a file `.eslintrc.json` in project root:
 ```json
 {
   "root": true,
-  "extends": [
-    "@ntnyq"
-  ]
+  "extends": ["@ntnyq"]
 }
 ```
 
@@ -35,7 +33,12 @@ Intergrated with VS Code:
 
 ```json
 {
+  "prettier.enable": true,
   "eslint.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "eslint.validate": [
     "vue",
     "html",
@@ -49,27 +52,14 @@ Intergrated with VS Code:
     "typescript",
     "javascriptreact",
     "typescriptreact"
-  ],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
-}
-```
-
-Avoid conflict with other formatter:
-
-```json
-{
-  "[javascript][typescript][vue]": {
-    "editor.formatOnSave": false
-  }
+  ]
 }
 ```
 
 ## Prettier config
 
-```shell
-$ pnpm add prettier @ntnyq/prettier-config -D
+```bash
+pnpm add prettier @ntnyq/prettier-config -D
 ```
 
 ### Configuration
