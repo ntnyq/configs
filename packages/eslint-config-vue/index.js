@@ -14,7 +14,6 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-undef': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
-
         // Only in Vue SFC
         'vue/prefer-import-from-vue': 'error',
       },
@@ -37,7 +36,14 @@ module.exports = {
         multiline: 'always',
       },
     ],
-    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'vue/component-name-in-template-casing': [
+      'error',
+      'PascalCase',
+      {
+        registeredComponentsOnly: false,
+        ignores: [],
+      },
+    ],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     'vue/custom-event-name-casing': ['error', 'camelCase'],
     'vue/define-macros-order': [
@@ -126,24 +132,28 @@ module.exports = {
     'vue/component-tags-order': [
       'error',
       {
-        order: [['template', 'script'], 'style'],
+        order: [['script', 'template'], 'style'],
       },
     ],
     'vue/attributes-order': [
       'error',
       {
         order: [
-          'EVENTS', // '@click="functionCall"', 'v-on="event"'
-          'TWO_WAY_BINDING', // 'v-model'
-          'OTHER_DIRECTIVES', // 'v-custom-directive'
-          'LIST_RENDERING', // 'v-for item in items'
-          'CONDITIONALS', //  'v-if', 'v-show', 'v-cloak'
-          'CONTENT', // 'v-text', 'v-html'
-          'UNIQUE', // 'ref', 'key', 'v-slot', 'slot'
-          'DEFINITION', // 'is', 'v-is'
-          'OTHER_ATTR', // 'custom-prop="foo"', ':prop="foo"'
-          'RENDER_MODIFIERS', // 'v-once', 'v-pre'
-          'GLOBAL', // 'id'
+          'EVENTS', // `@click="functionCall"`, `v-on="event"`
+          'TWO_WAY_BINDING', // `v-model`
+          'OTHER_DIRECTIVES', // `v-custom-directive`
+          'LIST_RENDERING', // `v-for item in items`
+          'CONDITIONALS', //  `v-if`, `v-show`, `v-cloak`
+          'CONTENT', // `v-text`, `v-html`
+          'SLOT', // `v-slot`, `slot`
+          'UNIQUE', // `ref`, `key`
+          'DEFINITION', // `is`, `v-is`
+          'ATTR_DYNAMIC', // `v-bind:prop="foo"`, `:prop="foo"`
+          // `OTHER_ATTR`, // `custom-prop="foo"`, `:prop="foo"`, `disabled`
+          'RENDER_MODIFIERS', // `v-once`, `v-pre`
+          'GLOBAL', // `id`
+          'ATTR_STATIC', // `prop="foo", `static attributes
+          'ATTR_SHORTHAND_BOOL', // `disabled`, prop shorthand
         ],
         alphabetical: false,
       },
