@@ -3,6 +3,9 @@
  * @see https://prettier.io/docs/en/options.html
  */
 
+/**
+ * @type {import('prettier').Config}
+ */
 module.exports = {
   // Maximum line length
   printWidth: 100,
@@ -66,7 +69,7 @@ module.exports = {
   endOfLine: 'lf',
 
   // Control whether Prettier formats quoted code embedded in the file
-  embeddedLanguageFormatting: 'off',
+  embeddedLanguageFormatting: 'auto',
 
   // Enforce single attribute per line in HTML, Vue and JSX
   singleAttributePerLine: true,
@@ -74,7 +77,7 @@ module.exports = {
   // Overrides for specific language
   overrides: [
     {
-      files: '*.{css,scss,less}',
+      files: ['*.css,', '*.scss,', '*.less'],
 
       options: {
         // Double quotes for CSS and its processor
