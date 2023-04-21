@@ -46,6 +46,7 @@ module.exports = {
     ],
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/prefer-ts-expect-error': 'error',
+    '@typescript-eslint/no-require-imports': 'error',
 
     // Override JS
     'no-useless-constructor': 'off',
@@ -99,6 +100,9 @@ module.exports = {
 
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': 'error',
+
+    'no-invalid-this': 'off',
+    '@typescript-eslint/no-invalid-this': 'error',
 
     quotes: 'off',
     '@typescript-eslint/quotes': [

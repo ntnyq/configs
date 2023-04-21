@@ -37,6 +37,9 @@ module.exports = {
     'yarn.lock',
     'src/components.d.ts',
     'src/auto-imports.d.ts',
+
+    // Force exclude
+    '.vitepress/cache',
   ],
 
   plugins: ['html', 'unicorn', 'unused-imports'],
@@ -174,9 +177,10 @@ module.exports = {
       },
     },
     {
-      files: ['*.js', '*.cjs'],
+      files: ['*.js', '*.cjs', '*.jsx'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/no-require-imports': 'off',
       },
     },
     {
@@ -228,6 +232,7 @@ module.exports = {
     'prefer-template': 'error',
     'template-curly-spacing': 'error',
     'generator-star-spacing': 'off',
+    'no-invalid-this': 'error',
     'no-empty-static-block': 'error',
     'no-new-native-nonconstructor': 'error',
     'arrow-parens': [
@@ -361,7 +366,7 @@ module.exports = {
 
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
-    'import/newline-after-import': 'error',
+    'import/newline-after-import': ['error', { count: 1 }],
     'import/order': [
       'error',
       {
@@ -442,6 +447,7 @@ module.exports = {
     'yml/no-empty-document': 'off',
 
     // n
+    'n/prefer-global/buffer': ['error', 'never'],
     'n/no-callback-literal': 'off',
 
     // unused-imports
