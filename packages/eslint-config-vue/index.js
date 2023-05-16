@@ -29,6 +29,7 @@ module.exports = {
     'vue/require-default-prop': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/no-setup-props-destructure': 'off',
+
     'vue/block-tag-newline': [
       'error',
       {
@@ -67,6 +68,8 @@ module.exports = {
     'vue/next-tick-style': ['error', 'promise'],
     'vue/no-constant-condition': ['error'],
     'vue/prefer-true-attribute-shorthand': ['error', 'always'],
+    'vue/prefer-define-options': 'error',
+    'vue/valid-define-options': 'error',
 
     // extensions
     'vue/this-in-template': ['error', 'never'],
