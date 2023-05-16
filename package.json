@@ -2,7 +2,7 @@
   "name": "@ntnyq/configs",
   "version": "1.7.3",
   "private": true,
-  "packageManager": "pnpm@8.4.0",
+  "packageManager": "pnpm@8.5.1",
   "scripts": {
     "lint": "eslint --cache .",
     "prepare": "husky install",
@@ -22,7 +22,7 @@
     "husky": "^8.0.3",
     "nano-staged": "^0.8.0",
     "npm-run-all": "^4.1.5",
-    "pnpm": "^8.4.0",
+    "pnpm": "^8.5.1",
     "vitest": "^0.31.0"
   },
   "prettier": "@ntnyq/prettier-config",
