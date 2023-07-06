@@ -5,7 +5,7 @@ import { resolve } from '../utils'
 const overrideConfigFile = resolve('packages/eslint-config/index.js')
 
 describe('invalid', () => {
-  it('error', async () => {
+  it('should have error', async () => {
     const eslint = new ESLint({ overrideConfigFile })
     const result = await eslint.lintText('export const foo = `bar`')
 
