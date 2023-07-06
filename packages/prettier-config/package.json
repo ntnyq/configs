@@ -1,5 +1,6 @@
 {
   "name": "@ntnyq/prettier-config",
+  "type": "module",
   "version": "1.10.0",
   "keywords": [],
   "license": "MIT",
@@ -7,6 +8,7 @@
     "name": "ntnyq",
     "email": "ntnyq13@gmail.com"
   },
+  "exports": "./index.js",
   "main": "index.js",
   "files": [
     "index.js"
