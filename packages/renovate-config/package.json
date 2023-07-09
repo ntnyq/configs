@@ -1,0 +1,22 @@
+{
+  "name": "@ntnyq/renovate-config",
+  "version": "1.10.0",
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
+  },
+  "files": [
+    "./default.json"
+  ],
+  "scripts": {
+    "test": "renovate-config-validator ./default.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "renovate": "^36.6.0"
+  }
+}
