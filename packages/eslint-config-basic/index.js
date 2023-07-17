@@ -609,8 +609,6 @@ module.exports = {
     ],
 
     // unicorn
-    'unicorn/no-unsafe-regex': 'off',
-
     'unicorn/error-message': 'error',
     'unicorn/escape-case': 'error',
     'unicorn/no-new-buffer': 'error',
