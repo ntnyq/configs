@@ -240,8 +240,8 @@ importers:
   packages/renovate-config:
     devDependencies:
       renovate:
-        specifier: ^36.9.1
-        version: 36.9.1(typanion@3.13.0)
+        specifier: ^36.9.2
+        version: 36.9.2(typanion@3.13.0)
 
   packages/tsconfig: {}
 
@@ -2573,13 +2573,8 @@ packages:
       '@types/node': 20.4.2
     dev: true
 
-  /@types/semver@7.3.13:
-    resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
-    dev: true
-
   /@types/semver@7.5.0:
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
-    dev: false
 
   /@types/shimmer@1.0.2:
     resolution: {integrity: sha512-dKkr1bTxbEsFlh2ARpKzcaAmsYixqt9UyCdoEZk8rHyE4iQYcDCyvSjDSf7JUWJHlJiTtbIoQjxKh6ViywqDAg==}
@@ -2805,7 +2800,7 @@ packages:
     engines: {node: '>=12 <14 || 14.2 - 14.9 || >14.10.0'}
     dependencies:
       '@arcanis/slice-ansi': 1.1.1
-      '@types/semver': 7.3.13
+      '@types/semver': 7.5.0
       '@types/treeify': 1.0.0
       '@yarnpkg/fslib': 2.10.3
       '@yarnpkg/json-proxy': 2.1.1
@@ -6644,8 +6639,8 @@ packages:
       - supports-color
     dev: true
 
-  /renovate@36.9.1(typanion@3.13.0):
-    resolution: {integrity: sha512-Fj7gOu2We4VJ8TsUyYvzUYnNv4BW5Yx8sKyF9g1F1T5neRfbYVFNAcoAIuhkdrKvkSWKOwXsyZ7/JWWmZgVqoA==}
+  /renovate@36.9.2(typanion@3.13.0):
+    resolution: {integrity: sha512-lUCp5LxxPsvKBDSAnXGINX5FzAxTVLI3F1MbTaNyfkuG7o5h4Pwn5CKqw73xPy4oLtIw3bMm03HmWpl4qWc1iQ==}
     engines: {node: ^18.12.0 || >=20.0.0, yarn: ^1.17.0}
     hasBin: true
     dependencies:

@@ -8,10 +8,19 @@
     "name": "ntnyq",
     "email": "ntnyq13@gmail.com"
   },
-  "exports": "./index.js",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "publishConfig": {
     "access": "public"

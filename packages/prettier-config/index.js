@@ -4,9 +4,16 @@
  */
 
 /**
+ * `defineConfig` function for Prettier
+ */
+export function defineConfig(config) {
+  return config
+}
+
+/**
  * @type {import('prettier').Config}
  */
-export default {
+export const config = {
   // Maximum line length
   printWidth: 100,
 
@@ -74,3 +81,5 @@ export default {
   // Enforce single attribute per line in HTML, Vue and JSX
   singleAttributePerLine: true,
 }
+
+export default config
