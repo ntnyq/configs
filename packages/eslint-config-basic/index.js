@@ -442,11 +442,6 @@ module.exports = {
     'yield-star-spacing': ['error', 'both'],
     yoda: ['error', 'never'],
 
-    'import/export': 'error',
-    'import/no-duplicates': 'error',
-    'import/no-named-default': 'error',
-    'import/no-webpack-loader-syntax': 'error',
-
     'n/handle-callback-err': ['error', '^(err|error)$'],
     'n/no-deprecated-api': 'error',
     'n/no-exports-assign': 'error',
@@ -596,7 +591,12 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
 
     'import/first': 'error',
+    'import/export': 'error',
+    'import/no-duplicates': 'error',
+    'import/no-self-import': 'error',
+    'import/no-named-default': 'error',
     'import/no-mutable-exports': 'error',
+    'import/no-webpack-loader-syntax': 'error',
     'import/newline-after-import': ['error', { count: 1 }],
     'import/order': [
       'error',
