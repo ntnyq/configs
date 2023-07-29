@@ -86,11 +86,19 @@ module.exports = {
     'vue/key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'vue/keyword-spacing': ['error', { before: true, after: true }],
     'vue/no-empty-pattern': 'error',
-    'vue/no-extra-parens': ['error', 'functions'],
-    'vue/no-irregular-whitespace': 'error',
     'vue/no-loss-of-precision': 'error',
+    'vue/no-irregular-whitespace': 'error',
+    'vue/no-use-v-else-with-v-for': 'error',
+    'vue/require-typed-object-prop': 'error',
+    'vue/no-extra-parens': ['error', 'functions'],
     'vue/no-restricted-syntax': ['error', 'DebuggerStatement', 'LabeledStatement', 'WithStatement'],
     'vue/no-sparse-arrays': 'error',
+    'vue/no-deprecated-model-definition': [
+      'error',
+      {
+        allowVue3Compat: true,
+      },
+    ],
     'vue/object-curly-newline': [
       'error',
       {
