@@ -42,11 +42,13 @@ module.exports = {
     'packages-lock.json',
     'pnpm-lock.yaml',
     'yarn.lock',
-    'src/components.d.ts',
-    'src/auto-imports.d.ts',
+
+    // Vite plugin
+    '**/components.d.ts',
+    '**/auto-imports.d.ts',
 
     // Force exclude
-    '.vitepress/cache',
+    '**/.vitepress/cache',
   ],
 
   parserOptions: {
@@ -174,7 +176,7 @@ module.exports = {
           },
           {
             pathPattern: '^exports.*$',
-            order: ['types', 'require', 'import'],
+            order: ['types', 'import', 'require', 'default'],
           },
           {
             pathPattern: '^scripts$',
