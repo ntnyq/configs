@@ -28,7 +28,7 @@ module.exports = {
     'vue/require-prop-types': 'off',
     'vue/require-default-prop': 'off',
     'vue/multi-word-component-names': 'off',
-    'vue/no-setup-props-destructure': 'off',
+    'vue/no-setup-props-reactivity-loss': 'off',
 
     'vue/block-tag-newline': [
       'error',
@@ -140,7 +140,7 @@ module.exports = {
       },
     ],
     'vue/template-curly-spacing': 'error',
-    'vue/component-tags-order': [
+    'vue/block-order': [
       'error',
       {
         order: ['script', 'template', 'style'],
