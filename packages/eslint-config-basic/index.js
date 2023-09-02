@@ -2,6 +2,10 @@
  * @file ESLint config
  */
 
+// eslint-disable-next-line n/prefer-global/process
+const isInEditor = (process.env.VSCODE_PID || process.env.JETBRAINS_IDE) && !process.env.CI
+const offInEditor = isInEditor ? 'off' : 'error'
+
 module.exports = {
   env: {
     es6: true,
@@ -236,14 +240,19 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-restricted-imports': 'off',
         'no-unused-expressions': 'off',
+
         'import/no-unresolved': 'off',
+        'n/prefer-global/process': 'off',
         'unused-imports/no-unused-vars': 'off',
         'unused-imports/no-unused-imports': 'off',
         '@typescript-eslint/comma-dangle': 'off',
-        '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/no-redeclare': 'off',
+        '@typescript-eslint/no-namespace': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/no-require-imports': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
+        '@typescript-eslint/consistent-type-imports': 'off',
       },
     },
   ],
@@ -687,10 +696,11 @@ module.exports = {
 
     // n
     'n/prefer-global/buffer': ['error', 'never'],
+    'n/prefer-global/process': ['error', 'never'],
     'n/no-callback-literal': 'off',
 
     // unused-imports
-    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-imports': offInEditor,
     'unused-imports/no-unused-vars': [
       'warn',
       {
