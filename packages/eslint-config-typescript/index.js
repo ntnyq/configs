@@ -9,7 +9,7 @@ module.exports = {
     '@ntnyq/eslint-config-basic',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/stylistic',
+    // 'plugin:@typescript-eslint/stylistic',
   ],
 
   settings: {
