@@ -27,6 +27,7 @@
     "esmodule",
     "iife",
     "jsdelivr",
+    "lockb",
     "pnpm",
     "stroustrup",
     "vitepress",

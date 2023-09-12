@@ -44,6 +44,7 @@ module.exports = {
     'packages-lock.json',
     'pnpm-lock.yaml',
     'yarn.lock',
+    'bun.lockb',
 
     // Vite plugin
     '**/components.d.ts',
