@@ -50,7 +50,7 @@ module.exports = {
     'vue/define-macros-order': [
       'error',
       {
-        order: ['defineProps', 'defineEmits'],
+        order: ['defineProps', 'defineEmits', 'defineOptions', 'defineSlots'],
       },
     ],
     'vue/html-comment-content-spacing': [
