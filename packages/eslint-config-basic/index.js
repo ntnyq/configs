@@ -52,6 +52,8 @@ module.exports = {
 
     // Force exclude
     '**/.vitepress/cache',
+    '**/.eslintcache',
+    '**/.stylelintcache',
   ],
 
   parserOptions: {
