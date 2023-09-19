@@ -2,7 +2,12 @@
  * @file ESLint config for TypeScript
  */
 
+const fs = require('node:fs')
+const { join } = require('node:path')
+const process = require('node:process')
 const basic = require('@ntnyq/eslint-config-basic')
+
+const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
 module.exports = {
   extends: [
@@ -18,7 +23,46 @@ module.exports = {
     },
   },
 
-  overrides: basic.overrides,
+  overrides: [
+    ...basic.overrides,
+    ...(fs.existsSync(join(process.cwd(), tsconfig))
+      ? [
+          {
+            parserOptions: {
+              tsconfigRootDir: process.cwd(),
+              project: [tsconfig],
+            },
+            parser: '@typescript-eslint/parser',
+            excludedFiles: ['**/*.md/*.*'],
+            files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
+            // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/recommended-requiring-type-checking.ts
+            rules: {
+              'dot-notation': 'off',
+              'require-await': 'off',
+              'no-implied-eval': 'off',
+              'no-throw-literal': 'off',
+              '@typescript-eslint/require-await': 'error',
+              '@typescript-eslint/no-unsafe-call': 'error',
+              '@typescript-eslint/unbound-method': 'error',
+              '@typescript-eslint/await-thenable': 'error',
+              '@typescript-eslint/no-for-in-array': 'error',
+              '@typescript-eslint/no-implied-eval': 'error',
+              '@typescript-eslint/no-throw-literal': 'error',
+              '@typescript-eslint/no-unsafe-return': 'error',
+              '@typescript-eslint/no-unsafe-argument': 'error',
+              '@typescript-eslint/no-misused-promises': 'error',
+              '@typescript-eslint/no-unsafe-assignment': 'error',
+              '@typescript-eslint/no-floating-promises': 'error',
+              '@typescript-eslint/restrict-plus-operands': 'error',
+              '@typescript-eslint/no-unsafe-member-access': 'error',
+              '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+              '@typescript-eslint/restrict-template-expressions': 'error',
+              '@typescript-eslint/dot-notation': ['error', { allowKeywords: true }],
+            },
+          },
+        ]
+      : []),
+  ],
 
   rules: {
     'import/named': 'off',
