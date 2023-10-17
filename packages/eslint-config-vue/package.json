@@ -14,7 +14,7 @@
   "dependencies": {
     "@ntnyq/eslint-config-typescript": "workspace:*",
     "eslint-plugin-vue": "^9.17.0",
-    "vue-eslint-parser": "^9.3.1"
+    "vue-eslint-parser": "^9.3.2"
   },
   "publishConfig": {
     "access": "public"
