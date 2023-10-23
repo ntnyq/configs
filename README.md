@@ -37,7 +37,7 @@ Intergrated with VS Code:
   "eslint.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "always"
   },
   "eslint.validate": [
     "vue",
