@@ -121,7 +121,7 @@ module.exports = {
       },
     },
     {
-      files: ['package.json'],
+      files: ['**/package.json'],
       parser: 'jsonc-eslint-parser',
       rules: {
         'jsonc/sort-keys': [
@@ -623,7 +623,7 @@ module.exports = {
       {
         groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
         'newlines-between': 'never',
-        pathGroups: [{ pattern: '@/**', group: 'internal' }],
+        pathGroups: [{ pattern: '{{@,~}/,#}**', group: 'internal' }],
         pathGroupsExcludedImportTypes: ['type'],
       },
     ],
