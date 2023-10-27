@@ -41,7 +41,7 @@ module.exports = {
       'error',
       'PascalCase',
       {
-        registeredComponentsOnly: false,
+        registeredComponentsOnly: true,
         ignores: [],
       },
     ],
@@ -129,6 +129,7 @@ module.exports = {
     ],
     'vue/operator-linebreak': ['error', 'before'],
     'vue/prefer-template': 'error',
+    'vue/prop-name-casing': ['error', 'camelCase'],
     'vue/quote-props': ['error', 'consistent-as-needed'],
     'vue/space-in-parens': ['error', 'never'],
     'vue/space-infix-ops': 'error',
