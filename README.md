@@ -46,7 +46,6 @@ Intergrated with VS Code:
     "json",
     "jsonc",
     "json5",
-    "astro",
     "markdown",
     "javascript",
     "typescript",
