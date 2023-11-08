@@ -30,6 +30,7 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     'vue/no-setup-props-reactivity-loss': 'off',
 
+    'vue/html-self-closing': 'error',
     'vue/block-tag-newline': [
       'error',
       {
@@ -67,7 +68,7 @@ module.exports = {
     'vue/padding-line-between-blocks': ['error', 'always'],
     'vue/prefer-separate-static-class': 'error',
     'vue/next-tick-style': ['error', 'promise'],
-    'vue/no-constant-condition': ['error'],
+    'vue/no-constant-condition': 'error',
     'vue/prefer-true-attribute-shorthand': ['error', 'always'],
     'vue/prefer-define-options': 'error',
     'vue/valid-define-options': 'error',
