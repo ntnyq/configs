@@ -41,8 +41,9 @@ module.exports = {
       'error',
       'PascalCase',
       {
-        registeredComponentsOnly: true,
-        ignores: [],
+        // Force auto-import components to be PascalCase
+        registeredComponentsOnly: false,
+        ignores: ['slot', 'component'],
       },
     ],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
