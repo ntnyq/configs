@@ -334,6 +334,7 @@ module.exports = {
     'no-cond-assign': 'error',
     'no-const-assign': 'error',
     'no-constant-condition': ['error', { checkLoops: false }],
+    'no-constant-binary-expression': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-delete-var': 'error',
