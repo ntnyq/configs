@@ -16,7 +16,7 @@
     "@ntnyq/eslint-config": "workspace:*",
     "@ntnyq/prettier-config": "workspace:*",
     "@types/eslint": "^8.44.7",
-    "@types/node": "^20.9.2",
+    "@types/node": "^20.9.4",
     "bumpp": "^9.2.0",
     "eslint": "^8.54.0",
     "husky": "^8.0.3",
