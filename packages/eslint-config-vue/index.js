@@ -73,7 +73,12 @@ module.exports = {
     'vue/prefer-define-options': 'error',
     'vue/valid-define-options': 'error',
 
+    // TypeScript enhance
+    'vue/define-emits-declaration': ['error', 'type-literal'],
+
     // extensions
+    'vue/v-if-else-key': 'error',
+    'vue/no-unused-emit-declarations': 'error',
     'vue/this-in-template': ['error', 'never'],
     'vue/array-bracket-spacing': ['error', 'never'],
     'vue/arrow-spacing': ['error', { before: true, after: true }],
