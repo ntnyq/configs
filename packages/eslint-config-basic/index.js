@@ -32,6 +32,16 @@ module.exports = {
     'public',
     'static',
 
+    // Nitro
+    '.nitro',
+
+    // Vercel
+    '.vercel',
+
+    // Nuxt
+    '.nuxt',
+    '.output',
+
     // Force lint
     '!.github',
     '!.vitepress',
