@@ -30,7 +30,18 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     'vue/no-setup-props-reactivity-loss': 'off',
 
-    'vue/html-self-closing': 'error',
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+          normal: 'always',
+          component: 'always',
+        },
+        svg: 'always',
+        math: 'always',
+      },
+    ],
     'vue/block-tag-newline': [
       'error',
       {

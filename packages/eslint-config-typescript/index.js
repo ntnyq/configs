@@ -7,14 +7,13 @@ const { join } = require('node:path')
 const process = require('node:process')
 const basic = require('@ntnyq/eslint-config-basic')
 
-const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
+const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.json'
 
 module.exports = {
   extends: [
     '@ntnyq/eslint-config-basic',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
-    // 'plugin:@typescript-eslint/stylistic',
   ],
 
   settings: {
@@ -58,6 +57,13 @@ module.exports = {
               '@typescript-eslint/no-unnecessary-type-assertion': 'error',
               '@typescript-eslint/restrict-template-expressions': 'error',
               '@typescript-eslint/dot-notation': ['error', { allowKeywords: true }],
+              '@typescript-eslint/consistent-type-imports': [
+                'error',
+                {
+                  prefer: 'type-imports',
+                  disallowTypeAnnotations: false,
+                },
+              ],
             },
           },
           {
@@ -203,13 +209,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/type-annotation-spacing': ['error', {}],
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      {
-        prefer: 'type-imports',
-        disallowTypeAnnotations: false,
-      },
-    ],
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/prefer-ts-expect-error': 'error',
     '@typescript-eslint/no-require-imports': 'error',
