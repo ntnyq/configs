@@ -7,7 +7,7 @@ const { join } = require('node:path')
 const process = require('node:process')
 const basic = require('@ntnyq/eslint-config-basic')
 
-const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.json'
+const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
 module.exports = {
   extends: [
@@ -34,7 +34,7 @@ module.exports = {
             parser: '@typescript-eslint/parser',
             excludedFiles: ['**/*.md/*.*'],
             files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
-            // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/recommended-requiring-type-checking.ts
+            // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/recommended-type-checked-only.ts
             rules: {
               'dot-notation': 'off',
               'require-await': 'off',
@@ -195,7 +195,6 @@ module.exports = {
     'import/named': 'off',
 
     // TS
-    '@typescript-eslint/semi': ['error', 'never'],
     '@typescript-eslint/ban-ts-comment': [
       'error',
       {
@@ -215,6 +214,7 @@ module.exports = {
 
     // Override JS
     'no-useless-constructor': 'off',
+
     indent: 'off',
     '@typescript-eslint/indent': [
       'error',
@@ -268,6 +268,9 @@ module.exports = {
 
     'no-invalid-this': 'off',
     '@typescript-eslint/no-invalid-this': 'error',
+
+    semi: 'off',
+    '@typescript-eslint/semi': ['error', 'never'],
 
     quotes: 'off',
     '@typescript-eslint/quotes': [
