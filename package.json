@@ -15,7 +15,7 @@
   "devDependencies": {
     "@ntnyq/eslint-config": "workspace:*",
     "@ntnyq/prettier-config": "workspace:*",
-    "@types/eslint": "^8.56.9",
+    "@types/eslint": "^8.56.10",
     "@types/node": "^20.12.7",
     "bumpp": "^9.4.0",
     "eslint": "^8.57.0",
