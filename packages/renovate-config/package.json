@@ -17,6 +17,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "renovate": "^37.425.1"
+    "renovate": "^37.431.0"
   }
 }
