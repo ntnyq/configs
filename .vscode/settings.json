@@ -2,12 +2,12 @@
   "prettier.enable": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": [
     "vue",
-    "html",
     "yaml",
+    "html",
     "json",
     "jsonc",
     "json5",
@@ -34,5 +34,6 @@
     "vitepress",
     "vuepress"
   ],
-  "cSpell.allowCompoundWords": true
+  "cSpell.allowCompoundWords": true,
+  "eslint.enable": true
 }

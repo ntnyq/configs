@@ -4,27 +4,26 @@
   "private": true,
   "packageManager": "pnpm@9.7.1",
   "scripts": {
-    "lint": "eslint --cache .",
+    "lint": "eslint .",
     "prepare": "husky",
     "release": "run-s release:check release:version release:publish",
     "release:check": "run-s lint test",
     "release:publish": "pnpm -r publish --access public",
-    "release:version": "bumpp -r",
-    "test": "vitest"
+    "release:version": "bumpp -r"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "workspace:*",
+    "@ntnyq/eslint-config": "^3.0.0-beta.3",
     "@ntnyq/prettier-config": "workspace:*",
     "@types/eslint": "^9.6.0",
     "@types/node": "^20.16.1",
     "bumpp": "^9.5.1",
-    "eslint": "^8.57.0",
+    "eslint": "^9.9.0",
     "husky": "^9.1.4",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^6.2.2",
     "pnpm": "^9.7.1",
-    "prettier": "3.3.3",
-    "vitest": "^2.0.5"
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
   },
   "prettier": "@ntnyq/prettier-config",
   "nano-staged": {

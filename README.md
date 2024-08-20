@@ -4,56 +4,7 @@ Opinionable configs
 
 ## ESLint config
 
-```bash
-pnpm add eslint typescript @ntnyq/eslint-config prettier @ntnyq/prettier-config -D
-```
-
-### Configuration
-
-Create a file `.eslintrc.json` in project root:
-
-```json
-{
-  "root": true,
-  "extends": ["@ntnyq"]
-}
-```
-
-Add lint scripts in `package.json`:
-
-```json
-{
-  "scripts": {
-    "lint": "eslint ."
-  }
-}
-```
-
-Intergrated with VS Code:
-
-```json
-{
-  "prettier.enable": true,
-  "eslint.enable": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
-  },
-  "eslint.validate": [
-    "vue",
-    "html",
-    "yaml",
-    "json",
-    "jsonc",
-    "json5",
-    "markdown",
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact"
-  ]
-}
-```
+**Note**: eslint-config source code has been moved to [ntnyq/eslint-config](https://github.com/ntnyq/eslint-config), only ESLint v9 is supported.
 
 ## Prettier config
 
