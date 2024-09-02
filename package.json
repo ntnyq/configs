@@ -2,7 +2,7 @@
   "name": "@ntnyq/configs",
   "version": "1.21.2",
   "private": true,
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.9.0",
   "scripts": {
     "lint": "eslint .",
     "prepare": "husky",
@@ -12,16 +12,16 @@
     "release:version": "bumpp -r"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.0.0-beta.3",
+    "@ntnyq/eslint-config": "^3.0.0-beta.4",
     "@ntnyq/prettier-config": "workspace:*",
-    "@types/eslint": "^9.6.0",
-    "@types/node": "^20.16.1",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^20.16.3",
     "bumpp": "^9.5.2",
     "eslint": "^9.9.1",
     "husky": "^9.1.5",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^6.2.2",
-    "pnpm": "^9.8.0",
+    "pnpm": "^9.9.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   },
