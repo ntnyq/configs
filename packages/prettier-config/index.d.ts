@@ -10,4 +10,4 @@ declare function defineConfig(config: Config): Config
 
 declare const config: Config
 
-export { defineConfig, config, config as default }
+export { config, config as default, defineConfig }
