@@ -1,4 +1,5 @@
 {
+  "eslint.enable": true,
   "prettier.enable": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -34,6 +35,5 @@
     "vitepress",
     "vuepress"
   ],
-  "cSpell.allowCompoundWords": true,
-  "eslint.enable": true
+  "cSpell.allowCompoundWords": true
 }

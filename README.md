@@ -1,6 +1,6 @@
 # configs
 
-Opinionable configs
+Opinionable configs.
 
 ## ESLint config
 
@@ -22,10 +22,17 @@ Config in `package.json`:
 }
 ```
 
-## Prior Art
+## Renovate config
 
-- [@antfu/eslint-config](https://github.com/antfu/eslint-config)
-- [@element-plus/eslint-config](https://github.com/element-plus/element-plus/tree/dev/internal/eslint-config)
+Config in `.github/renovate.json`:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>ntnyq/configs//packages/renovate-config/default.json"],
+  "automerge": true
+}
+```
 
 ## License
 
