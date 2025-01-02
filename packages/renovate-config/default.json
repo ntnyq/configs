@@ -10,5 +10,9 @@
       "enabled": false
     }
   ],
+  "git-submodules": {
+    "enabled": true,
+    "automerge": true
+  },
   "ignoreDeps": ["node"]
 }
