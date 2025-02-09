@@ -3,6 +3,8 @@
  * @see https://prettier.io/docs/en/options.html
  */
 
+// @ts-check
+
 /**
  * `defineConfig` function for Prettier
  */
@@ -13,73 +15,32 @@ export function defineConfig(config) {
 /**
  * @type {import('prettier').Config}
  */
+// @keep-sorted
 export const config = {
-  // Maximum line length
-  printWidth: 100,
-
-  // Specify the number of spaces per indentation-level
-  tabWidth: 2,
-
-  // Indent lines with tabs instead of spaces
-  useTabs: false,
-
-  // Use semicolons or not
-  semi: false,
-
-  // Use single quotes instead of double quotes
-  singleQuote: true,
-
-  // Change when properties in objects are quoted
-  quoteProps: 'as-needed',
-
-  // Use single quotes instead of double quotes in JSX
-  jsxSingleQuote: true,
-
-  // Print trailing commas wherever possible when multi-line
-  trailingComma: 'all',
-
-  // Print spaces between brackets in object literals.
-  bracketSpacing: true,
-
-  // Put the > of a multi-line HTML (HTML, JSX, Vue, Angular) element at the end of the last line instead of being alone on the next line (does not apply to self closing elements)
-  bracketSameLine: false,
-
-  // Include parentheses around a sole arrow function parameter
   arrowParens: 'avoid',
-
-  // Format only a segment of a file.
-  rangeStart: 0,
-  rangeEnd: Number.POSITIVE_INFINITY,
-
-  // Specify which parser to use.
-  // parser: undefined,
-
-  // Specify the file name to use to infer which parser to use.
-  // filepath: undefined,
-
-  // Prettier can restrict itself to only format files that contain a special comment, called a pragma, at the top of the file.
-  requirePragma: false,
-
-  // Prettier can insert a special @format marker at the top of files specifying that the file has been formatted with prettier.
-  insertPragma: false,
-
-  // By default, Prettier will wrap markdown text as-is since some services use a line-break-sensitive renderer, e.g. GitHub comment and Bitbucket.
-  proseWrap: 'preserve',
-
-  // Specify the global whitespace sensitivity for HTML files
-  htmlWhitespaceSensitivity: 'css',
-
-  // Whether or not to indent the code inside <script> and <style> tags in Vue files
-  vueIndentScriptAndStyle: false,
-
-  // End of line
-  endOfLine: 'lf',
-
-  // Control whether Prettier formats quoted code embedded in the file
+  bracketSameLine: false,
+  bracketSpacing: true,
   embeddedLanguageFormatting: 'auto',
-
-  // Enforce single attribute per line in HTML, Vue and JSX
+  endOfLine: 'lf',
+  experimentalOperatorPosition: 'start',
+  experimentalTernaries: true,
+  htmlWhitespaceSensitivity: 'css',
+  insertPragma: false,
+  jsxSingleQuote: true,
+  objectWrap: 'collapse',
+  printWidth: 100,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  rangeEnd: Number.POSITIVE_INFINITY,
+  rangeStart: 0,
+  requirePragma: false,
+  semi: false,
   singleAttributePerLine: true,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'all',
+  useTabs: false,
+  vueIndentScriptAndStyle: false,
 }
 
 export default config
