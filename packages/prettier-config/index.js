@@ -23,7 +23,7 @@ export const config = {
   embeddedLanguageFormatting: 'auto',
   endOfLine: 'lf',
   experimentalOperatorPosition: 'start',
-  experimentalTernaries: true,
+  experimentalTernaries: false,
   htmlWhitespaceSensitivity: 'css',
   insertPragma: false,
   jsxSingleQuote: true,
