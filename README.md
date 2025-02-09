@@ -8,18 +8,37 @@ Opinionable configs.
 
 ## Prettier config
 
-```bash
+```shell
 pnpm add prettier @ntnyq/prettier-config -D
 ```
 
 ### Configuration
 
-Config in `package.json`:
+Use `prettier.config.mjs`:
 
-```json
-{
-  "prettier": "@ntnyq/prettier-config"
-}
+```js
+// @ts-check
+
+import { config, defineConfig } from '@ntnyq/prettier-config'
+
+export default defineConfig({
+  ...config,
+
+  overrides: [
+    {
+      files: ['**/*.html'],
+      options: {
+        singleAttributePerLine: false,
+      },
+    },
+    {
+      files: ['**/*.{css,scss}'],
+      options: {
+        singleQuote: false,
+      },
+    },
+  ],
+})
 ```
 
 ## Renovate config

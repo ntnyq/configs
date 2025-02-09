@@ -2,7 +2,7 @@
   "name": "@ntnyq/configs",
   "version": "1.22.1",
   "private": true,
-  "packageManager": "pnpm@10.2.0",
+  "packageManager": "pnpm@10.2.1",
   "scripts": {
     "lint": "eslint .",
     "prepare": "husky",
@@ -13,18 +13,23 @@
     "test": "pnpm -r run test"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.12.3",
+    "@ntnyq/eslint-config": "^4.0.0-beta.2",
     "@ntnyq/prettier-config": "workspace:*",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.13.0",
-    "bumpp": "^10.0.1",
-    "eslint": "^9.19.0",
+    "@types/node": "^22.13.1",
+    "bumpp": "^10.0.2",
+    "eslint": "^9.20.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.2",
-    "pnpm": "^10.2.0",
-    "prettier": "^3.4.2",
+    "pnpm": "^10.2.1",
+    "prettier": "^3.5.0",
     "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   },
   "nano-staged": {
     "*.{js,ts,cjs,mjs,json,md,yml,yaml}": "eslint --fix"
