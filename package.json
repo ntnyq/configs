@@ -1,5 +1,6 @@
 {
   "name": "@ntnyq/configs",
+  "type": "module",
   "version": "1.22.1",
   "private": true,
   "packageManager": "pnpm@10.2.1",
