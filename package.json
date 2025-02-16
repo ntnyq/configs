@@ -29,7 +29,8 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild"
+      "esbuild",
+      "protobufjs"
     ]
   },
   "nano-staged": {
