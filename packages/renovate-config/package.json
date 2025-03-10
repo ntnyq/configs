@@ -1,11 +1,23 @@
 {
   "name": "@ntnyq/renovate-config",
+  "type": "module",
   "version": "2.0.0",
-  "keywords": [],
+  "keywords": [
+    "renovate-config"
+  ],
   "license": "MIT",
   "author": {
     "name": "ntnyq",
     "email": "ntnyq13@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntnyq/configs.git",
+    "directory": "packages/renovate-config"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./default.json": "./default.json"
   },
   "files": [
     "./default.json"
@@ -17,6 +29,6 @@
     "test": "renovate-config-validator ./default.json"
   },
   "devDependencies": {
-    "renovate": "^39.185.0"
+    "renovate": "^39.191.4"
   }
 }

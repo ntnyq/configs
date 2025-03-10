@@ -1,11 +1,23 @@
 {
   "name": "@ntnyq/tsconfig",
+  "type": "module",
   "version": "2.0.0",
-  "keywords": [],
+  "keywords": [
+    "tsconfig"
+  ],
   "license": "MIT",
   "author": {
     "name": "ntnyq",
     "email": "ntnyq13@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntnyq/configs.git",
+    "directory": "packages/tsconfig"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./tsconfig.json": "./tsconfig.json"
   },
   "files": [
     "tsconfig.json"

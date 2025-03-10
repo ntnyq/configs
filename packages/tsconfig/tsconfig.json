@@ -1,8 +1,11 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "moduleDetection": "force",
+    "moduleResolution": "Bundler",
     "allowUmdGlobalAccess": false,
     "resolveJsonModule": true,
+    "erasableSyntaxOnly": true,
+    "libReplacement": false,
     "allowJs": false,
     "checkJs": false,
     "declaration": true,
@@ -29,12 +32,13 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noPropertyAccessFromIndexSignature": false,
-    "noStrictGenericChecks": false,
     "noUncheckedIndexedAccess": false,
-    "noUncheckedSideEffectImports": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "strictBuiltinIteratorReturn": true,
-    "useUnknownInCatchVariables": true
-  }
+    "useUnknownInCatchVariables": true,
+    "noStrictGenericChecks": false,
+    "noUncheckedSideEffectImports": true,
+    "strictBuiltinIteratorReturn": true
+  },
+  "$schema": "https://json.schemastore.org/tsconfig"
 }

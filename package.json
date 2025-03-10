@@ -3,9 +3,9 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.2",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint",
     "prepare": "husky",
     "release": "run-s release:check release:version release:publish",
     "release:check": "run-s lint test",
@@ -14,26 +14,20 @@
     "test": "pnpm -r run test"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^4.0.0-beta.8",
+    "@ntnyq/eslint-config": "^4.0.0",
     "@ntnyq/prettier-config": "workspace:*",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.13.8",
+    "@types/node": "^22.13.10",
     "bumpp": "^10.0.3",
-    "eslint": "^9.21.0",
+    "eslint": "^9.22.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.2",
-    "pnpm": "^10.5.2",
+    "pnpm": "^10.6.2",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "protobufjs"
-    ]
-  },
   "nano-staged": {
-    "*.{js,ts,cjs,mjs,json,md,yml,yaml}": "eslint --fix"
+    "*.{js,ts,cjs,mjs,md,yml,yaml,json}": "eslint --fix"
   }
 }
