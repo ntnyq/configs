@@ -38,6 +38,7 @@
     "pnpm",
     "protobufjs",
     "stroustrup",
+    "unrs",
     "vitepress",
     "vuepress"
   ],

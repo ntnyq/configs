@@ -1,7 +1,9 @@
 packages:
   - packages/*
+
 overrides:
-  esbuild: ^0.25.0
+  esbuild: ^0.25.4
+
 onlyBuiltDependencies:
   - better-sqlite3
   - core-js-pure
@@ -9,3 +11,4 @@ onlyBuiltDependencies:
   - esbuild
   - protobufjs
   - re2
+  - unrs-resolver

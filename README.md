@@ -8,38 +8,7 @@ Opinionable configs.
 
 ## Prettier config
 
-```shell
-pnpm add prettier @ntnyq/prettier-config -D
-```
-
-### Configuration
-
-Use `prettier.config.mjs`:
-
-```js
-// @ts-check
-
-import { config, defineConfig } from '@ntnyq/prettier-config'
-
-export default defineConfig({
-  ...config,
-
-  overrides: [
-    {
-      files: ['**/*.html'],
-      options: {
-        singleAttributePerLine: false,
-      },
-    },
-    {
-      files: ['**/*.{css,scss}'],
-      options: {
-        singleQuote: false,
-      },
-    },
-  ],
-})
-```
+**Note**: prettier-config source code has been moved to [ntnyq/prettier-config](https://github.com/ntnyq/prettier-config).
 
 ## Renovate config
 
