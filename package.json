@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@10.12.2",
+  "packageManager": "pnpm@10.12.4",
   "scripts": {
     "lint": "eslint",
     "prepare": "husky",
@@ -17,14 +17,14 @@
     "@ntnyq/eslint-config": "^4.3.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.15.32",
+    "@types/node": "^22.15.33",
     "bumpp": "^10.2.0",
-    "eslint": "^9.29.0",
+    "eslint": "^9.30.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.4",
-    "pnpm": "^10.12.2",
-    "prettier": "^3.6.0",
+    "pnpm": "^10.12.4",
+    "prettier": "^3.6.2",
     "typescript": "^5.8.3"
   },
   "nano-staged": {
