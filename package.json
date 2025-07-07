@@ -14,7 +14,7 @@
     "test": "pnpm -r run test"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^4.3.0",
+    "@ntnyq/eslint-config": "^5.0.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/eslint": "^9.6.1",
     "@types/node": "^22.15.34",
