@@ -1,18 +1,31 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", "schedule:weekly", "group:allNonMajor"],
-  "labels": ["dependencies"],
+  "git-submodules": {
+    "automerge": true,
+    "enabled": true
+  },
+  "ignoreDeps": ["node"],
   "ignorePaths": ["**/__tests__/**", "**/fixtures/**"],
-  "rangeStrategy": "bump",
+  "ignorePresets": [":semanticPrefixFixDepsChoreOthers"],
+  "labels": ["dependencies"],
+  "minimumReleaseAge": "7 days",
   "packageRules": [
     {
-      "matchDepTypes": ["peerDependencies"],
-      "enabled": false
+      "addLabels": ["deps:actions"],
+      "description": "Use the deps:actions label for github-action manager updates (this means Renovate's github-action manager).",
+      "matchManagers": ["github-actions"]
+    },
+    {
+      "addLabels": ["deps:npm"],
+      "description": "Use the deps:npm label for npm manager packages (this means Renovate's npm manager).",
+      "matchManagers": ["npm"]
+    },
+    {
+      "description": "Disable Renovate for peer dependencies.",
+      "enabled": false,
+      "matchDepTypes": ["peerDependencies"]
     }
   ],
-  "git-submodules": {
-    "enabled": true,
-    "automerge": true
-  },
-  "ignoreDeps": ["node"]
+  "rangeStrategy": "bump"
 }
