@@ -17,7 +17,7 @@
     "@ntnyq/eslint-config": "^5.3.1",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^24.2.1",
+    "@types/node": "^24.3.0",
     "bumpp": "^10.2.3",
     "eslint": "^9.33.0",
     "husky": "^9.1.7",
