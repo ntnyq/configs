@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.16.1",
   "scripts": {
     "lint": "eslint",
     "prepare": "husky",
@@ -16,7 +16,7 @@
     "@ntnyq/eslint-config": "^5.5.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^24.3.1",
+    "@types/node": "^24.5.0",
     "bumpp": "^10.2.3",
     "eslint": "^9.35.0",
     "husky": "^9.1.7",
