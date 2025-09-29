@@ -3,6 +3,8 @@
   "type": "module",
   "version": "2.0.0",
   "keywords": [
+    "config",
+    "ntnyq",
     "tsconfig"
   ],
   "license": "MIT",
@@ -15,12 +17,9 @@
     "url": "git+https://github.com/ntnyq/configs.git",
     "directory": "packages/tsconfig"
   },
-  "exports": {
-    "./package.json": "./package.json",
-    "./tsconfig.json": "./tsconfig.json"
-  },
   "files": [
-    "tsconfig.json"
+    "base.json",
+    "strict.json"
   ],
   "publishConfig": {
     "access": "public"
