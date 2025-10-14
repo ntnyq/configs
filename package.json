@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.18.1",
   "scripts": {
     "lint": "eslint",
     "prepare": "husky",
@@ -16,14 +16,14 @@
     "@ntnyq/eslint-config": "^5.6.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^24.5.2",
-    "bumpp": "^10.2.3",
-    "eslint": "^9.36.0",
+    "@types/node": "^24.7.0",
+    "bumpp": "^10.3.1",
+    "eslint": "^9.37.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "nano-staged": {
     "*.{js,ts,cjs,mjs,md,yml,yaml,json}": "eslint --fix"
