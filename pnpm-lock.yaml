@@ -21,7 +21,7 @@ importers:
         specifier: ^9.6.1
         version: 9.6.1
       '@types/node':
-        specifier: ^24.7.0
+        specifier: ^24.7.2
         version: 24.7.2
       bumpp:
         specifier: ^10.3.1
@@ -48,7 +48,7 @@ importers:
   packages/renovate-config:
     devDependencies:
       renovate:
-        specifier: ^41.138.1
+        specifier: ^41.146.0
         version: 41.148.1(encoding@0.1.13)(typanion@3.14.0)
 
   packages/tsconfig: {}
@@ -8762,7 +8762,7 @@ snapshots:
       proc-log: 5.0.0
       semver: 7.7.2
       tar: 7.4.3
-      tinyglobby: 0.2.14
+      tinyglobby: 0.2.15
       which: 5.0.0
     transitivePeerDependencies:
       - supports-color
