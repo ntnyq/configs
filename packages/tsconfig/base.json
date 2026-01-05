@@ -17,7 +17,7 @@
     "moduleDetection": "force",
     "moduleResolution": "Bundler",
     "newLine": "lf",
-    "noFallthroughCasesInSwitch": false,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
