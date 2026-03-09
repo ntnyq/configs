@@ -3,7 +3,7 @@
   "type": "module",
   "version": "3.1.0",
   "private": true,
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.30.3",
   "scripts": {
     "lint": "oxlint",
     "format": "oxfmt",
@@ -15,7 +15,7 @@
     "test": "pnpm -r run test"
   },
   "devDependencies": {
-    "@types/node": "^25.3.0",
+    "@types/node": "^25.3.3",
     "bumpp": "^10.4.1",
     "husky": "^9.1.7",
     "nano-staged": "^0.9.0",
