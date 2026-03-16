@@ -3,7 +3,7 @@
   "type": "module",
   "version": "3.1.0",
   "private": true,
-  "packageManager": "pnpm@10.30.3",
+  "packageManager": "pnpm@10.31.0",
   "scripts": {
     "lint": "oxlint",
     "format": "oxfmt",
@@ -15,13 +15,13 @@
     "test": "pnpm -r run test"
   },
   "devDependencies": {
-    "@types/node": "^25.3.3",
+    "@types/node": "^25.3.5",
     "bumpp": "^10.4.1",
     "husky": "^9.1.7",
     "nano-staged": "^0.9.0",
     "npm-run-all2": "^8.0.4",
-    "oxfmt": "^0.35.0",
-    "oxlint": "^1.50.0",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
     "typescript": "^5.9.3"
   },
   "nano-staged": {
