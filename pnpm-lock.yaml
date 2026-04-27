@@ -36,7 +36,7 @@ importers:
   packages/renovate-config:
     devDependencies:
       renovate:
-        specifier: ^43.104.4
+        specifier: ^43.132.1
         version: 43.140.0(typanion@3.14.0)
 
   packages/tsconfig: {}
